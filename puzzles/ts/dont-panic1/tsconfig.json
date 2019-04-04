@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+  },
+  "files": ["dont-panic1.ts"]
+}
