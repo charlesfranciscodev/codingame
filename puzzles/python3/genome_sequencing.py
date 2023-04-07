@@ -1,3 +1,4 @@
+# Based on https://www.xarg.org/puzzle/codingame/genome-sequencing/
 import itertools
 from typing import List, Tuple
 

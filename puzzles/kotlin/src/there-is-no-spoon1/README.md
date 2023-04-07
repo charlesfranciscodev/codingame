@@ -1,4 +1,8 @@
-# There Is No Spoon 1
+Sure, here's the Markdown document for the "There Is No Spoon 1" coding puzzle in Kotlin without the code section:
+
+# There Is No Spoon 1 - Kotlin Solution
+
+This is a solution in Kotlin to the "There Is No Spoon 1" coding puzzle on [CodinGame](https://www.codingame.com/training/easy/there-is-no-spoon-episode-1).
 
 ## Problem Description
 

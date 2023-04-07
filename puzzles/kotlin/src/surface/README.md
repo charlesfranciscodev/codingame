@@ -5,6 +5,3 @@ The coding challenge on the website https://www.codingame.com/training/hard/surf
 To solve this challenge, the program must use a graph traversal algorithm, such as depth-first search or breadth-first search, to find the connected components of cells that have the same color. Once the program has identified all of the connected components, it can calculate the surface area of each component and return the maximum surface area.
 
 The program needs to handle different edge cases, such as a grid that has only black cells or only white cells, a grid with only one cell, or a grid with disconnected components of the same color. The challenge also provides multiple test cases to ensure that the program correctly handles various inputs.
-
-## Links
-* [Wikipedia](https://en.wikipedia.org/wiki/Flood_fill)
