@@ -1,0 +1,4 @@
+Dragon
+200
+Troll
+300

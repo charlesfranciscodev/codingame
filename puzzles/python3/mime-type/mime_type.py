@@ -1,7 +1,7 @@
 from typing import Dict
 
 
-if __name__ == "__main__":
+def main():
     table: Dict[str, str] = {}  # file extension => mime type
     nb_elements: int = int(input())
     nb_names: int = int(input())
@@ -21,3 +21,7 @@ if __name__ == "__main__":
                 print(table[extension])
             else:
                 print("UNKNOWN")
+
+
+if __name__ == "__main__":
+    main()

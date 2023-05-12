@@ -1,5 +1,3 @@
-Sure, here is the updated markdown documentation for `defibrillators.kt` without the credits:
-
 # Defibrillators Puzzle
 
 This is the solution for the Defibrillators puzzle from CodinGame, implemented in Kotlin.

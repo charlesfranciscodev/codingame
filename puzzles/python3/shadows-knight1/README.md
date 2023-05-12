@@ -1,8 +1,6 @@
-
-
 # Shadows of the Knight - Episode 1
 
-This is a solution to the "Shadows of the Knight - Episode 1" puzzle on CodinGame (https://www.codingame.com/training/easy/shadows-of-the-knight-episode-1).
+This is a solution to the "Shadows of the Knight - Episode 1" puzzle on CodinGame.
 
 ## Problem Description
 

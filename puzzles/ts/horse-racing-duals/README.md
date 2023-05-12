@@ -4,9 +4,11 @@ You have a list of N horses, each with a strength value, represented by an integ
 
 For example, given the following list of horses with their corresponding strength values:
 
+```
 5 8 9 14 21
+```
 
-The minimum difference in strength between two horses is 1, which is the difference between 5 and 8.
+The minimum difference in strength between two horses is 1, which is the difference between 8 and 9.
 
 The input for the problem consists of two lines. The first line contains an integer N, the number of horses. The second line contains N space-separated integers, representing the strength values of the N horses.
 

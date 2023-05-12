@@ -1,3 +1,7 @@
+# Onboarding
+
+## Solution
+
 Here's a possible solution to the "Onboarding" challenge on CodinGame using C++:
 
 ```c++
@@ -29,3 +33,12 @@ int main()
 ```
 
 In this solution, we use a `while` loop to continuously read input from the standard input until the program is terminated. In each iteration of the loop, we read the name and distance of two enemies using `cin`, and then determine which one is closer based on their distances. Finally, we print the name of the closer enemy using `cout`. Note that we use `endl` to add a newline character at the end of each output line.
+
+## Test
+
+```bash
+g++ -o program puzzles/cpp/onboarding/onboarding.cpp
+chmod +x program
+puzzles/cpp/onboarding/test_onboarding.sh
+rm program
+```
