@@ -26,7 +26,7 @@ The file name may have multiple periods (.) in it, but the extension is always t
 
 The solution reads the the number of MIME types, number of file names and the file names. It stores the MIME types in a map with the extension as the key. Then it reads a list of file names and determines the corresponding MIME type by looking up the extension in the map. If the extension is not found, it outputs `UNKNOWN`.
 
-## Example
+## Example Input/Output
 
 Input:
 
@@ -46,4 +46,37 @@ Output:
 ```
 text/html
 text/plain
+```
+
+## Example Code
+
+```python
+# Read the number of elements in the association table
+n = int(input())
+
+# Read the number of file names to be analyzed
+q = int(input())
+
+# Create a dictionary to store the association table
+mime_types = {}
+
+# Read the association table
+for _ in range(n):
+    ext, mime = input().split()
+    mime_types[ext.lower()] = mime
+
+# Process each file name
+for _ in range(q):
+    file_name = input().lower()
+
+    # Find the extension of the file
+    if '.' in file_name:
+        extension = file_name.split('.')[-1]
+        if extension in mime_types:
+            print(mime_types[extension])
+        else:
+            print("UNKNOWN")
+    else:
+        print("UNKNOWN")
+
 ```

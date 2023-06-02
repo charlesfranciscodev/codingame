@@ -1,15 +1,13 @@
 # Horse Racing Duals
 
-You have a list of N horses, each with a strength value, represented by an integer. You need to find the minimum difference in strength between two horses out of all possible pairs of horses. In other words, you need to find the two horses with the closest strength values.
+In this code, we first read the number of horses (N) from the input. Then, we iterate N times and read the strength of each horse, storing them in an array called strengths.
 
-For example, given the following list of horses with their corresponding strength values:
+Next, we sort the strengths array in ascending order. Sorting the array allows us to find the minimum difference between adjacent strengths more easily.
 
-5 8 9 14 21
+We then initialize the minDiff variable with Infinity as a starting point for the minimum difference.
 
-The minimum difference in strength between two horses is 1, which is the difference between 5 and 8.
+Next, we iterate through the sorted strengths array from the second element to the last, calculating the difference between each strength and its previous strength. If the calculated difference is smaller than the current minimum difference (minDiff), we update minDiff to the new smaller value.
 
-The input for the problem consists of two lines. The first line contains an integer N, the number of horses. The second line contains N space-separated integers, representing the strength values of the N horses.
+Finally, we output the minDiff as the result.
 
-The output should be a single integer, the minimum difference in strength between two horses.
-
-The solution to this problem involves sorting the list of horses in ascending order, and then computing the difference between adjacent horses in the sorted list. The minimum difference is the smallest of these computed differences.
+You can run this code and test it with different inputs to see the output.

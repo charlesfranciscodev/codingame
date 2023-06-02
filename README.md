@@ -14,15 +14,15 @@ It's worth noting that CodinGame is a website that provides programming challeng
 | Title | Solution(s) | Topic(s) |
 | :---: | :------: | :------: |
 | Onboarding 🛹 | [Python](./puzzles/python3/onboarding), [JavaScript](./puzzles/js/onboarding), [C++](./puzzles/cpp/onboarding) | Variables, Input/Output, Conditions |
-| The Descent 🌄 | [Python](./puzzles/python3/the-descent) &starf;, [Kotlin](./puzzles/kotlin/src/the-descent), [TypeScript](./puzzles/ts/the-descent), [Swift](./puzzles/swift/the-descent), [Bash](./puzzles/bash/the-descent) | Conditions, Loops |
+| The Descent 🌄 | [Python](./puzzles/python3/the-descent) &starf;, [Kotlin](./puzzles/kotlin/src/the-descent), [TypeScript](./puzzles/ts/the-descent), [C](./puzzles/c/the-descent) | Conditions, Loops |
 | Power of Thor 1 ⚡ | [Python](./puzzles/python3/power-of-thor1) &starf;, [Kotlin](./puzzles/kotlin/src/power-of-thor1), [TypeScript](./puzzles/ts/power-of-thor1), [C++](./puzzles/cpp/power-of-thor1.cpp), [Swift](./puzzles/swift/power-of-thor1) | Input/Output, Conditions |
-| Temperatures ❄️ | [Python](./puzzles/python3/temperatures) &starf;, [Kotlin](./puzzles/kotlin/src/temperatures), [TypeScript](./puzzles/ts/temperatures), [C++](./puzzles/cpp/temperatures.cpp), [Swift](./puzzles/swift/temperatures) | Conditions, Loops, Arrays |
+| Temperatures ❄️ | [Python](./puzzles/python3/temperatures) &starf;, [Kotlin](./puzzles/kotlin/src/temperatures), [TypeScript](./puzzles/ts/temperatures), [Ruby](./puzzles/ruby/temperatures) | Conditions, Loops, Arrays |
 | Mars Lander 1 🚀 | [Python](./puzzles/python3/mars-lander1), [Kotlin](./puzzles/kotlin/src/mars-lander1), [TypeScript](./puzzles/ts/mars-lander1) &starf;, [C++](./puzzles/cpp/mars-lander1.cpp) | Conditions, Loops |
-| ASCII Art 🎨 | [Python](./puzzles/python3/ascii-art) &starf;, [Kotlin](./puzzles/kotlin/src/ascii-art), [TypeScript](./puzzles/ts/ascii-art), [Ruby](./puzzles/ruby/ascii-art) | Strings |
-| Unary 1️⃣ | [Python](./puzzles/python3/unary), [TypeScript](./puzzles/ts/unary), [Haskell](./puzzles/haskell/unary) &starf;, [C#](./puzzles/cs/unary) | Strings, Encoding |
+| ASCII Art 🎨 | [Python](./puzzles/python3/ascii-art), [Kotlin](./puzzles/kotlin/src/ascii-art), [TypeScript](./puzzles/ts/ascii-art), [Ruby](./puzzles/ruby/ascii-art) &starf; | Strings |
+| Unary 1️⃣ | [Python](./puzzles/python3/unary), [TypeScript](./puzzles/ts/unary) &starf;, [Haskell](./puzzles/haskell/unary), [C#](./puzzles/cs/unary) | Strings, Encoding |
 | MIME Type 🎵 | [Python](./puzzles/python3/mime-type) &starf;, [Kotlin](./puzzles/kotlin/src/mime-type), [TypeScript](./puzzles/ts/mime-type), [C#](./puzzles/cs/mime-type) | Strings, Hash Tables |
 | Defibrillators 💖 | [Python](./puzzles/python3/defibrillators) &starf;, [Kotlin](./puzzles/kotlin/src/defibrillators), [TypeScript](./puzzles/ts/defibrillators), [C#](./puzzles/cs/defibrillators) | Strings, Trigonometry |
-| Racing Duals 🏁 | [Python](./puzzles/python3/horse-racing-duals), [Kotlin](./puzzles/kotlin/src/horse-racing-duals), [TypeScript](./puzzles/ts/horse-racing-duals), [Ruby](./puzzles/ruby/horse-racing-duals) &starf;, [Bash](./puzzles/bash/horse-racing-duals) | Arrays, Sorting |
+| Racing Duals 🏁 | [Python](./puzzles/python3/horse-racing-duals) &starf;, [Kotlin](./puzzles/kotlin/src/horse-racing-duals), [JavaScript](./puzzles/js/horse-racing-duals), [Ruby](./puzzles/ruby/horse-racing-duals) | Arrays, Sorting |
 
 ### Medium Puzzles
 | Title | Solution(s) | Topic(s) |

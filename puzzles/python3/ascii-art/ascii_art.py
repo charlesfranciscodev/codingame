@@ -1,4 +1,4 @@
-if __name__ == "__main__":
+def solve():
     width = int(input())
     height = int(input())
     text = input().upper()
@@ -13,3 +13,7 @@ if __name__ == "__main__":
             end = start + width
             output += row[start:end]
         print(output)
+
+
+if __name__ == "__main__":
+    solve()

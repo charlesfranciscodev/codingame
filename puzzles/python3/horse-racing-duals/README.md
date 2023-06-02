@@ -15,3 +15,29 @@ The input for the problem consists of two lines. The first line contains an inte
 The output should be a single integer, the minimum difference in strength between two horses.
 
 The solution to this problem involves sorting the list of horses in ascending order, and then computing the difference between adjacent horses in the sorted list. The minimum difference is the smallest of these computed differences.
+
+## Code Example
+
+```python
+N = int(input())  # Read the number of horses
+
+strengths = []  # Create an empty list for strengths
+
+# Read the strengths of each horse and append them to the list
+for _ in range(N):
+    strength = int(input())
+    strengths.append(strength)
+
+strengths.sort()  # Sort the list of strengths
+
+min_diff = float('inf')  # Initialize min_diff with a large value
+
+# Find the minimum difference between strengths
+for i in range(1, N):
+    diff = strengths[i] - strengths[i-1]
+    if diff < min_diff:
+        min_diff = diff
+
+print(min_diff)  # Print the minimum difference as the output
+
+```

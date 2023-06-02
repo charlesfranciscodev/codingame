@@ -7,33 +7,3 @@ The objective is to write a program that finds and outputs the closest temperatu
 The challenge consists of writing a program that takes as input the list of temperature readings and outputs the temperature closest to zero. If the list is empty, the program should output 0.
 
 The challenge is designed to help players learn and practice programming skills such as array manipulation, looping, and conditional statements. It is a fun and engaging way to improve programming skills while solving a challenging and entertaining puzzle.
-
-## Code Example
-
-```python
-import sys
-
-# Read the number of temperatures to analyze
-n = int(input())
-
-# Read the temperatures as a string and split it into a list of integers
-temperatures = list(map(int, input().split()))
-
-# Initialize variables to store the closest temperature
-closest_temp = sys.maxsize
-abs_closest_temp = sys.maxsize
-
-# Iterate over each temperature
-for temp in temperatures:
-    # Calculate the absolute difference between the temperature and zero
-    abs_diff = abs(temp)
-    
-    # Check if the current temperature is closer to zero
-    if abs_diff < abs_closest_temp or (abs_diff == abs_closest_temp and temp > closest_temp):
-        closest_temp = temp
-        abs_closest_temp = abs_diff
-
-# Print the closest temperature
-print(closest_temp if n > 0 else 0)
-
-```
