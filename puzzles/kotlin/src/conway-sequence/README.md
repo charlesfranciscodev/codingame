@@ -1,5 +1,3 @@
-
-
 # Conway Sequence
 
 This is the Kotlin implementation for the "Conway Sequence" puzzle on CodinGame.

@@ -34,12 +34,13 @@ It's worth noting that CodinGame is a website that provides programming challeng
 | War ♥️ ♦️ ♠️ ♣️ | [Python](./puzzles/python3/war) &starf;, [Kotlin](./puzzles/kotlin/src/war), [TypeScript](./puzzles/ts/war/war.ts), [C++](./puzzles/cpp/war.cpp) | Queues, Card Games |
 | Stock Exchange Losses 📈 | [Python](./puzzles/python3/stock-exchange) &starf; | Conditions, Loops |
 | The Fall 1 💎 | [Python](./puzzles/python3/the-fall1), [JavaScript](./puzzles/js/the-fall1) &starf; | 2D Arrays |
-| Network Cabling 🔌 | [Python](./puzzles/python3/network-cabling) &starf; | Sorting, Median |
-| Conway Sequence 👀 | [Python](./puzzles/python3/conway-sequence), [Kotlin](./puzzles/kotlin/src/conway-sequence), [Haskell](./puzzles/haskell/conway-sequence) &starf; | Sequences |
+| Network Cabling 🔌 | [Python](./puzzles/python3/network-cabling) | Sorting, Median |
+| Conway Sequence 👀 | [Python](./puzzles/python3/conway-sequence), [Kotlin](./puzzles/kotlin/src/conway-sequence), [C#](./puzzles/cs/conway-sequence) | Sequences |
 | Telephone Numbers 📱 | [Python](./puzzles/python3/telephone-numbers) &starf; | Tries |
 | Dwarfs standing on giants 🏞️ | [Python](./puzzles/python3/dwarfs-giants) &starf;, [TypeScript](./puzzles/ts/dwarfs-giants) | Graphs, Recursion |
 | Blunder 1 🍺 | [Python](./puzzles/python3/blunder1) &starf; | 2D Arrays, State Machine, Simulation |
 | Scrabble 🔤 | [Python](./puzzles/python3/scrabble) &starf;, [Kotlin](./puzzles/kotlin/src/scrabble), [TypeScript](./puzzles/ts/scrabble/scrabble.ts) | Strings, Hash Tables |
+| The Gift 🎁 | [Python](./puzzles/python3/the-gift) | Arrays, Sorting, Greedy algorithms |
 | Mayan Calculation 2️⃣0️⃣ | [Python](./puzzles/python3/mayan-calc), [Kotlin](./puzzles/kotlin/src/mayan-calc) &starf;, [Ruby](./puzzles/ruby/mayan-calc) | Strings |
 
 ### Hard Puzzles
