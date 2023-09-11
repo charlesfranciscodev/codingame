@@ -1,5 +1,9 @@
 # Unary
 
+## Summary
+
+The goal of this program is to encode an incoming message using a special binary encoding method. In this method, the input message, consisting of ASCII characters, is transformed into blocks of 0s separated by spaces. The first block is either 0 or 00, where 0 represents a series of 1s and the absence of 0 represents a series of 0s. The second block contains the number of 0s corresponding to the number of bits in the series. For example, the character 'C' is encoded as "0 0 00 0000 0 00," where 'C' in binary is 1000011. The program should handle input messages with up to 100 ASCII characters and output the encoded message accordingly.
+
 ## Code Description
 
 The provided code consists of two functions: `to_binary` and `to_unary`. These functions are used to convert text between binary and unary representations.
@@ -14,7 +18,7 @@ Finally, the function returns the unary representation of the input binary strin
 
 The main part of the code prompts the user to enter a text string, which is then passed through the `to_binary` function to obtain the binary representation. The binary representation is then passed to the `to_unary` function to get the unary representation. Finally, the unary representation is printed as output.
 
-## Code Example
+## Code Example(s)
 
 This code provides two functions, `to_binary` and `to_unary`, that allow for the conversion of text between binary and unary representations.
 
