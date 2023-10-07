@@ -1,7 +1,9 @@
 import sys
 
+
 def calculate_distance(x1, y1, x2, y2):
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
 
 def find_nearest_neighbor(current_node, unvisited_nodes, nodes):
     min_distance = sys.maxsize
@@ -12,6 +14,7 @@ def find_nearest_neighbor(current_node, unvisited_nodes, nodes):
             min_distance = distance
             nearest_neighbor = node
     return nearest_neighbor
+
 
 def tsp_solver(nodes):
     num_nodes = len(nodes)
@@ -27,6 +30,7 @@ def tsp_solver(nodes):
 
     tsp_path.append(0)
     return tsp_path
+
 
 # Read input
 N = int(input())

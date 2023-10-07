@@ -24,7 +24,7 @@ def test_loop():
     input_data = "2\n10 20\n30 40\n-5 6 7 -20 -15 0 2\n"
     expected_output = "0 3\n"
 
-    with StringIO(input_data) as stdin, StringIO() as stdout:
+    with StringIO(input_data) as _, StringIO() as stdout:
         with redirect_stdout(stdout):
             exec(open("your_code.py").read())
 

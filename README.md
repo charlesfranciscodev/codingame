@@ -56,4 +56,4 @@ It's worth noting that CodinGame is a website that provides programming challeng
 | TAN Network 🚉 | [Python](./puzzles/python3/tan-network) &starf;, [Kotlin](./puzzles/kotlin/src/tan-network) | Graphs, Pathfinding |
 | Genome Sequencing 🧬 | [Python](./puzzles/python3/genome_sequencing.py) &starf; | Strings, Shortest Common Supersequence |
 | Blunder 2 🎱 | [Python](./puzzles/python3/blunder2) &starf; | Pathfinding |
-| Blunder 3 ⌛ | [Python](./puzzles/python3/blunder3.py) &starf; | Time Complexity |
+| Blunder 3 ⌛ | [Python](./puzzles/python3/blunder3) &starf; | Time Complexity |
