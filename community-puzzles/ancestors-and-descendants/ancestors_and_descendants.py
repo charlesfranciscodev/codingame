@@ -18,7 +18,7 @@ for _ in range(nb_people):
     name = line.replace(".", "").rstrip()
     name_level = len(line) - len(name)
     tree_level = len(tree)
-    
+
     if name_level == 0:
         if tree:
             print_tree(tree)
@@ -27,7 +27,7 @@ for _ in range(nb_people):
         print_tree(tree)
         while name_level < len(tree):
             tree.pop()
-    
+
     tree.append(name)
 
 print_tree(tree)
