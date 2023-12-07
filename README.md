@@ -1,12 +1,10 @@
 # Solutions to CodinGame Puzzles
 
-The repository contains a number of solutions to programming challenges from CodinGame. These solutions are written in various programming languages, including Python, C++, and Java. Each solution is contained in its own file, with a name that describes the challenge it solves.
+![CodinGame](images/MeanMax_Logo.jpg)
 
-In addition to the solutions, the repository also includes some other files, such as a README.md file that provides information about the repository and its contents, as well as some configuration files that are specific to CodinGame.
+The repository hosts solutions to diverse programming challenges from [CodinGame](https://www.codingame.com/), written in languages such as Python, C++, and Java. Each solution resides in a file named after the respective challenge. CodinGame offers developers a platform to enhance coding skills through engaging challenges, supporting multiple programming languages, and fostering friendly competition for solving challenges efficiently.
 
-It's worth noting that CodinGame is a website that provides programming challenges and puzzles for developers to solve. The challenges are designed to help developers improve their coding skills by providing them with interesting and engaging problems to solve. The website supports a number of different programming languages, and developers can compete with each other to see who can solve the challenges the fastest and most efficiently.
-
-![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![](https://img.shields.io/github/languages/top/charlesfranciscodev/codingame.svg) ![](https://img.shields.io/badge/code%20style-flake8-black)
+![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg) ![](https://img.shields.io/badge/code%20style-flake8-black)
 
 ## Puzzles
 
