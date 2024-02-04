@@ -10,6 +10,30 @@ The challenge consists of writing a program that takes as input the string of ch
 
 The challenge is designed to help players learn and practice programming skills such as string manipulation, input/output handling, and ASCII art rendering. It is a fun and engaging way to improve programming skills while solving a challenging and entertaining puzzle.
 
+### Example Input
+
+```
+4
+5
+CodinGame
+ #  ##   ## ##  ### ###  ## # # ###  ## # # #   # # ###  #  ##   #  ##   ## ### # # # # # # # # # # ### ### 
+# # # # #   # # #   #   #   # #  #    # # # #   ### # # # # # # # # # # #    #  # # # # # # # # # #   #   # 
+### ##  #   # # ##  ##  # # ###  #    # ##  #   ### # # # # ##  # # ##   #   #  # # # # ###  #   #   #   ## 
+# # # # #   # # #   #   # # # #  #  # # # # #   # # # # # # #    ## # #   #  #  # # # # ### # #  #  #       
+# # ##   ## ##  ### #    ## # # ###  #  # # ### # # # #  #  #     # # # ##   #  ###  #  # # # #  #  ###  #  
+
+```
+
+### Example Output
+
+```
+ ##  #  ##  ### ###  ##  #  # # ### 
+#   # # # #  #  # # #   # # ### #   
+#   # # # #  #  # # # # ### ### ##  
+#   # # # #  #  # # # # # # # # #   
+ ##  #  ##  ### # #  ## # # # # ### 
+```
+
 ## Problem Approach
 
 To solve this coding puzzle, you'll need to create a program that takes the width (L), height (H), text (T), and character representations (ASCII art) for letters A-Z and '?'. Here's a high-level outline of how you can approach this problem:
@@ -42,28 +66,24 @@ To solve this coding puzzle, you'll need to create a program that takes the widt
 7. **Testing**:
    - Test your program with different input cases, including different widths, heights, and text inputs, to ensure it works correctly.
 
-Here's a simplified Python-like pseudocode for the main part of the code:
+Here's a simplified Python code for the main part of the code:
 
 ```python
-# Input parsing
-L = int(input())
-H = int(input())
-T = input()
-char_art = {}  # Dictionary to store character ASCII art
-
-# Populate char_art with ASCII art representations for A-Z and '?'
-
-# Process and print the ASCII art for each line
-for i in range(H):
-    line = ""  # Initialize an empty line for each row
+def ascii_art(L, H, T, ascii_dict):
+    result = [''] * H
+    
     for char in T:
-        if 'A' <= char <= 'Z':
-            line += char_art[char][i]
-        elif 'a' <= char <= 'z':
-            line += char_art[char.upper()][i]
+        if char.isalpha():
+            index = ord(char.upper()) - ord('A')
         else:
-            line += char_art['?'][i]
-    print(line)
+            index = 26  # '?' character
+            
+        start = index * L
+        end = start + L
+        for i in range(H):
+            result[i] += ascii_dict[i][start:end]
+    
+    return '\n'.join(result)
 ```
 
 This pseudocode outlines the key steps to solve the coding puzzle. You need to implement the details, including reading the ASCII art representations and handling edge cases.

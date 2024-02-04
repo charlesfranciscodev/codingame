@@ -50,7 +50,7 @@ The repository hosts solutions to diverse programming challenges from [CodinGame
 | Super Computer 📅 | [Python](./puzzles/python3/super-computer), [Kotlin](./puzzles/kotlin/src/super-computer) | Sorting, Greedy Algorithms, Scheduling |
 | Roller Coaster 🎢 | [Python](./puzzles/python3/roller-coaster) &starf; | Queues, Dynamic Programming, Simulation |
 | Surface 🌊 | [Python](./puzzles/python3/surface) &starf;, [Kotlin](./puzzles/kotlin/src/surface) | 2D Arrays, Graphs, Flood Fill |
-| CGX Formatter 🎻 | [Python](./puzzles/python3/cgx_formatter.py) &starf; | Strings, Parsing |
+| CGX Formatter 🎻 | [Python](./puzzles/python3/cgx-formatter) &starf; | Strings, Parsing |
 | TAN Network 🚉 | [Python](./puzzles/python3/tan-network) &starf;, [Kotlin](./puzzles/kotlin/src/tan-network) | Graphs, Pathfinding |
 | Genome Sequencing 🧬 | [Python](./puzzles/python3/genome-sequencing) &starf; | Strings, Shortest Common Supersequence |
 | Blunder 2 🎱 | [Python](./puzzles/python3/blunder2) &starf; | Pathfinding |
