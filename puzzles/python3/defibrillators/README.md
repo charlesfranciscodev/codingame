@@ -55,3 +55,19 @@ nearest_defibrillator = find_nearest_defibrillator(user_longitude, user_latitude
 print(nearest_defibrillator)
 
 ```
+
+## Defibrillator Locator Logic
+
+### Conversion of Coordinates
+The code begins by defining a function to convert coordinates from a string format to radians. This conversion is essential for subsequent trigonometric calculations.
+
+### Distance Calculation
+Another function calculates the distance between the user's location and each defibrillator using the Haversine formula. This formula considers the curvature of the Earth and is suitable for small distances.
+
+### Finding the Nearest Defibrillator
+Iterating through the list of defibrillators, the code calculates the distance for each one and keeps track of the nearest defibrillator found so far. The minimum distance and corresponding defibrillator information are updated whenever a closer defibrillator is encountered.
+
+### Input and Output
+The script takes user input for their location, the number of defibrillators, and details about each defibrillator. After processing, it outputs the name of the nearest defibrillator based on the calculated distances.
+
+This program essentially translates geographical coordinates into radians, computes distances with the Haversine formula, and identifies the closest defibrillator. It provides a practical solution for locating essential medical equipment in emergency situations.
