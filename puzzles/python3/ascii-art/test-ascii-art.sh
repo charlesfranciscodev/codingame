@@ -4,15 +4,15 @@
 output=$(python3 puzzles/python3/ascii-art/ascii_art.py < puzzles/python3/ascii-art/input.txt)
 
 # Expected output
-expected_output="# # ### ### # # ### ### ### ### ### 
-###   # # # # #   #  #   #    # # # 
-###  ## # # ###  ##  #   #   ## # # 
-# #     # # # #      #   #      # # 
-# #  #  # # # #  #   #   #   #  # # "
+expected_output=" ##  #  ##  ### ###  ##  #  # # ### 
+#   # # # #  #  # # #   # # ### #   
+#   # # # #  #  # # # # ### ### ##  
+#   # # # #  #  # # # # # # # # #   
+ ##  #  ##  ### # #  ## # # # # ### "
 
 # Compare the output with the expected output
 if [[ "$output" == "$expected_output" ]]; then
-  echo "Integration test passed!"
+  printf "Integration test passed!\n"
 else
-  echo "Integration test failed. Expected: $expected_output. Got: $output"
+  printf "Integration test failed.\nExpected:\n$expected_output\nGot:\n$output\n"
 fi
