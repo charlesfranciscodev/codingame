@@ -1,4 +1,4 @@
-def calculate_accuracy(key, submission) -> float:
+def calculate_accuracy(key: str, submission: str) -> float:
     if len(key) == 0 and len(submission) == 0:
         return 1.0
     else:
