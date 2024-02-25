@@ -4,7 +4,7 @@
 
 The "Solutions to CodinGame Puzzles" project is a comprehensive repository housing solutions to an array of programming challenges sourced from CodinGame, a platform designed to enhance coding skills through interactive challenges. This repository features solutions implemented in Python, C++, Java, and other languages, each neatly organized within files named after the respective challenge. Covering a spectrum of difficulty levels from easy to hard, these solutions tackle diverse topics such as variables, input/output handling, conditions, loops, arrays, graphs, and more. With a focus on efficiency and clarity, the project aims to serve as a valuable resource for developers seeking to sharpen their problem-solving abilities and explore various programming paradigms while enjoying the friendly competition fostered by CodinGame's platform. Additionally, the project provides detailed documentation and adheres to standardized coding practices, ensuring accessibility and ease of use for contributors and users alike.
 
-![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg) ![](https://img.shields.io/badge/code%20style-flake8-black)
+![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg) [![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 ## Puzzles
 
@@ -68,3 +68,7 @@ poetry run ruff check .
 # Formatting
 poetry run ruff format .
 ```
+
+### General Tips
+
+To tackle CodinGame puzzles effectively, start by understanding the problem statement thoroughly. Break down complex tasks into smaller, manageable steps. Utilize the provided input/output specifications to design your solution. Leverage appropriate data structures like arrays, graphs, queues, or strings based on the problem requirements. Pay attention to conditions and loops for flow control. For puzzles involving grids or matrices, consider 2D array manipulation techniques. Implement algorithms such as BFS, DFS, binary search, or sorting algorithms as needed. Optimize your code for efficiency, especially in hard puzzles, by employing dynamic programming or greedy algorithms. Test your solutions against sample inputs and edge cases to ensure correctness. Finally, document your code clearly, adhering to standard coding practices. Collaborate with others and explore diverse programming languages to broaden your problem-solving skills.
