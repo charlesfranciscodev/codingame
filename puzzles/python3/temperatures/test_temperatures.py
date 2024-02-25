@@ -29,5 +29,5 @@ class ClosestToZeroTestCase(unittest.TestCase):
         self.assertEqual(closest_to_zero(temperatures), 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

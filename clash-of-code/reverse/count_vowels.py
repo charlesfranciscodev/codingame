@@ -1,6 +1,6 @@
 sentence = input().split()
 
-vowels = ['a', 'e', 'i', 'o', 'u']
+vowels = ["a", "e", "i", "o", "u"]
 
 counts = []
 for word in sentence:
@@ -10,4 +10,4 @@ for word in sentence:
             count += 1
     counts.append(str(count))
 
-print(' '.join(counts))
+print(" ".join(counts))

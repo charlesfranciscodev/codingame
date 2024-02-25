@@ -1,2 +1,2 @@
 h = int(input())
-print(h * 2 ** 6)
+print(h * 2**6)

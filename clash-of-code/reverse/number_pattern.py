@@ -6,7 +6,6 @@ def reverse_game(input_num):
 
 
 class TestReverseGame(unittest.TestCase):
-
     def test_case_1(self):
         self.assertEqual(reverse_game(1), 1)
 
@@ -20,5 +19,5 @@ class TestReverseGame(unittest.TestCase):
         self.assertEqual(reverse_game(100), 150)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

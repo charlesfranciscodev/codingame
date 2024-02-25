@@ -12,7 +12,7 @@ def test_validate_cryptichip_number():
     assert validate_cryptichip_number("1234567890123") is False  # Last digit should be 5, not 3
     assert validate_cryptichip_number("4567890123456") is False  # Last digit should be 0, not 6
     assert validate_cryptichip_number("1111111111111") is False  # Last digit should be 0, not 1
-    assert validate_cryptichip_number("123456789012") is False   # Length is not 13
+    assert validate_cryptichip_number("123456789012") is False  # Length is not 13
 
     print("All tests passed!")
 

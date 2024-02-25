@@ -1,2 +1,2 @@
 for s in input().split():
-    print(sum(map(ord,s)))
+    print(sum(map(ord, s)))

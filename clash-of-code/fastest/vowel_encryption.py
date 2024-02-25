@@ -4,7 +4,7 @@ def encrypt_message(s):
     vowel_count = 0
 
     # Define the set of lowercase vowels
-    vowels = {'a', 'e', 'i', 'o', 'u', 'y'}
+    vowels = {"a", "e", "i", "o", "u", "y"}
 
     # Iterate through the characters in the input string
     for char in s:
@@ -19,6 +19,7 @@ def encrypt_message(s):
     final_product = vowel_sum * vowel_count
 
     return final_product
+
 
 # Read the input string from the user
 s = input()

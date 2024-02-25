@@ -2,8 +2,8 @@ from typing import List
 
 
 if __name__ == "__main__":
-    EMPTY = '.'
-    NODE = '0'
+    EMPTY = "."
+    NODE = "0"
     grid: List[str] = []
 
     width = int(input())  # the number of cells on the X axis

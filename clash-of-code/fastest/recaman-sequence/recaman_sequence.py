@@ -20,4 +20,4 @@ n = int(input())
 result = recamans_sequence(n)
 
 # Print the result
-print(' '.join(map(str, result)))
+print(" ".join(map(str, result)))

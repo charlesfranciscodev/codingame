@@ -5,12 +5,13 @@ width = int(input())
 def generate_grid(rows, columns):
     output = ""
     for i in range(rows):
-        row = ''
+        row = ""
         for _ in range(columns):
-            row += 'O'
+            row += "O"
         output += row
         if i < rows - 1:
-            output += '\n'
+            output += "\n"
     return output
+
 
 print(generate_grid(height, width))

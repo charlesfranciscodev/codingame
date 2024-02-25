@@ -14,7 +14,7 @@ def find_shortest_supersequence_length(seqs: list[str]) -> int:
                 if cur_superseq.find(perm[j]) != -1:
                     break
                 elif cur_superseq[i:] == perm[j][: len(cur_superseq) - i]:
-                    cur_superseq += perm[j][len(cur_superseq) - i:]
+                    cur_superseq += perm[j][len(cur_superseq) - i :]
                     break
                 i += 1
 

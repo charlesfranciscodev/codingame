@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    width, height = map(int,  input().split())
+    width, height = map(int, input().split())
     nb_turns = int(input())
     x, y = map(int, input().split())
 

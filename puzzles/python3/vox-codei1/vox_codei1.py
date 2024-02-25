@@ -1,9 +1,9 @@
 import copy
 from typing import List, Optional
 
-EMPTY = '.'
-TARGET = '@'
-WALL = '#'
+EMPTY = "."
+TARGET = "@"
+WALL = "#"
 EXPLOSION_TIME = 3
 BOMB_RANGE = 3
 

@@ -8,4 +8,4 @@ for i in range(0, len(coins)):
         change[i] += 1
         n -= coins[i]
 
-print(' '.join(map(str, change)))
+print(" ".join(map(str, change)))

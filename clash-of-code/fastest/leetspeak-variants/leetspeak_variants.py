@@ -1,5 +1,5 @@
 def generate_leetspeak_variants(word):
-    leet_dict = {'A': '4', 'E': '3', 'I': '1', 'L': '1', 'T': '7', 'O': '0'}
+    leet_dict = {"A": "4", "E": "3", "I": "1", "L": "1", "T": "7", "O": "0"}
     variants = set()
 
     def generate_variants(current_variant, remaining_chars):
@@ -13,7 +13,7 @@ def generate_leetspeak_variants(word):
 
         generate_variants(current_variant + char, rest)
 
-    generate_variants('', word)
+    generate_variants("", word)
     return sorted(variants)
 
 

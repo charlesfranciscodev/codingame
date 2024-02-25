@@ -16,7 +16,7 @@ def main():
         if dot_index == -1 or dot_index == len(name) - 1:
             print("UNKNOWN")
         else:
-            extension: str = name[dot_index + 1:]
+            extension: str = name[dot_index + 1 :]
             if extension in table:
                 print(table[extension])
             else:

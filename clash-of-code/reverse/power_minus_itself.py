@@ -1,2 +1,2 @@
 a = int(input())
-print(a ** 2 - a)
+print(a**2 - a)

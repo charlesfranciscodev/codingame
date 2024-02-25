@@ -80,5 +80,5 @@ class TestSolve(unittest.TestCase):
         self.assertEqual(result_thor_y, expected_thor_y)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

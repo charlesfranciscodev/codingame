@@ -4,4 +4,4 @@ a = []
 for i in range(0, n):
     a.append(str(x))
     x += r
-print(' '.join(a))
+print(" ".join(a))

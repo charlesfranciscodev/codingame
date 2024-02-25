@@ -1,14 +1,19 @@
-WALL = '#'
+WALL = "#"
 
-FOLLOW_RIGHT = 'R'
-FOLLOW_LEFT = 'L'
+FOLLOW_RIGHT = "R"
+FOLLOW_LEFT = "L"
 
-RIGHT = '>'
-DOWN = 'v'
-LEFT = '<'
-UP = '^'
+RIGHT = ">"
+DOWN = "v"
+LEFT = "<"
+UP = "^"
 
-DIRECTIONS = {RIGHT, DOWN, LEFT, UP, }
+DIRECTIONS = {
+    RIGHT,
+    DOWN,
+    LEFT,
+    UP,
+}
 
 FOLLOW_RIGHT_PRIORITIES = {
     UP: [RIGHT, UP, LEFT, DOWN],
@@ -25,13 +30,13 @@ FOLLOW_LEFT_PRIORITIES = {
 }
 
 
-class Pikachu():
+class Pikachu:
     def __init__(self):
         self.start = (0, 0)
         self.previous = (0, 0)
         self.x = 0
         self.y = 0
-        self.facing = ''
+        self.facing = ""
         self.priorities = {}
 
     def is_trapped(self):
@@ -98,10 +103,7 @@ class Game:
             self.rows[self.pika.y][self.pika.x] += 1
 
     def is_pikachu_back_at_the_start(self):
-        return all([
-            (self.pika.x, self.pika.y) == self.pika.start,
-            self.rows[self.pika.y][self.pika.x] != 0
-        ])
+        return all([(self.pika.x, self.pika.y) == self.pika.start, self.rows[self.pika.y][self.pika.x] != 0])
 
     def pikachu_can_go_down(self):
         return self.pika.y < self.height - 1 and self.rows[self.pika.y + 1][self.pika.x] != WALL
@@ -118,7 +120,7 @@ class Game:
     def print_solution(self):
         for y in range(self.height):
             for x in range(self.width):
-                print(self.rows[y][x], end='')
+                print(self.rows[y][x], end="")
             print()
 
 

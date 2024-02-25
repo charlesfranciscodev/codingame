@@ -50,5 +50,5 @@ class NameColorTests(unittest.TestCase):
         self.assertEqual(result, "grey")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

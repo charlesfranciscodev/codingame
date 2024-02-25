@@ -1,5 +1,5 @@
 class Time:
-    SEPARATOR = ':'
+    SEPARATOR = ":"
 
     def __init__(self, timestamp):
         self.nb_opponents = 0  # number of players in the room

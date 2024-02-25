@@ -2,8 +2,8 @@ from collections import deque
 from typing import Deque, Dict, List
 
 
-LAND = '#'
-WATER = 'O'
+LAND = "#"
+WATER = "O"
 DEFAULT_INDEX = -1
 
 

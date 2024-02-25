@@ -11,11 +11,11 @@ LEFT = "LEFT"
 RIGHT = "RIGHT"
 
 # Possible ASCII Maze Characters
-WALL = '#'
-EMPTY = '.'
-START = 'T'
-CONTROL_ROOM = 'C'
-UNKNOWN = '?'
+WALL = "#"
+EMPTY = "."
+START = "T"
+CONTROL_ROOM = "C"
+UNKNOWN = "?"
 
 
 class Game:
@@ -48,7 +48,7 @@ class Game:
             if not came_from:
                 self.maze_explored = True
         if self.maze_explored:
-            to_avoid: Tuple[str] = (WALL)
+            to_avoid: Tuple[str] = WALL
             if not self.control_room_reached:
                 came_from, neighbor = self.bfs(CONTROL_ROOM, to_avoid)
             else:

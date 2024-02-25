@@ -15,7 +15,7 @@ def read_num(numeral_dict: Dict[MayanNumeral, int], height: int) -> List[int]:
     for i in range(nb_lines):
         num_line = input()
         numeral += num_line
-        numeral += '\n'
+        numeral += "\n"
         if i % height == height - 1:
             # last column
             number = numeral_dict[numeral]
@@ -63,7 +63,7 @@ if __name__ == "__main__":
         for row in numerals:
             for j in range(column, column + width):
                 numeral += row[j]
-            numeral += '\n'
+            numeral += "\n"
         numeral_dict[numeral] = i
 
     # Read the 2 numbers
@@ -77,13 +77,13 @@ if __name__ == "__main__":
 
     # Calculate the result of the operation in base 10
     result = 0
-    if operation == '+':
+    if operation == "+":
         result = num1 + num2
-    elif operation == '-':
+    elif operation == "-":
         result = num1 - num2
-    elif operation == '*':
+    elif operation == "*":
         result = num1 * num2
-    elif operation == '/':
+    elif operation == "/":
         result = num1 / num2
 
     # Convert the result back to the original base
@@ -91,4 +91,4 @@ if __name__ == "__main__":
     for number in num_list:
         for numeral, n in numeral_dict.items():
             if n == number:
-                print(numeral, end='')
+                print(numeral, end="")

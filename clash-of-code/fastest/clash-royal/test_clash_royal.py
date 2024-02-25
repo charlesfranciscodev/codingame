@@ -27,5 +27,5 @@ class TestClashRoyalMatch(unittest.TestCase):
         self.assertEqual(remaining_health, -280)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

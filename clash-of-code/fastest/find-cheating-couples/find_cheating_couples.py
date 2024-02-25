@@ -8,7 +8,7 @@ def find_cheating_couples(n, relationships):
             partners[a] = set()
         if b not in partners:
             partners[b] = set()
-        
+
         partners[a].add(b)
         partners[b].add(a)
 
@@ -16,11 +16,11 @@ def find_cheating_couples(n, relationships):
     for a, b in relationships:
         if len(partners[a]) > 1 and len(partners[b]) > 1:
             cheaters_count += 1
-    
+
     return cheaters_count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Read input
     n = int(input())
     relationships = []

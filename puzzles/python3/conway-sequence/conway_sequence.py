@@ -23,4 +23,4 @@ if __name__ == "__main__":
         temp_sequence.append(previous)
         conway_sequence = temp_sequence  # update
 
-    print(' '.join(map(str, conway_sequence)))
+    print(" ".join(map(str, conway_sequence)))
