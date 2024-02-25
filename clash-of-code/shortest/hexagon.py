@@ -1,1 +1,1 @@
-print(6*int(input())**2)
+print(6 * int(input()) ** 2)

@@ -3,11 +3,13 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 
+
 def calculate_result(X, N):
     x_factorial = factorial(X)
     x_minus_n_factorial = factorial(X - N)
     result = x_factorial // x_minus_n_factorial
     return result
+
 
 # Taking input
 X = int(input())

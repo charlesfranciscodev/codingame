@@ -6,7 +6,7 @@ n = int(input())
 for i in range(n):
     time_str = input()
     time = datetime.strptime(time_str, format_str)
-    if (time < min_time):
+    if time < min_time:
         min_time = time
 
 print(min_time.strftime(format_str))

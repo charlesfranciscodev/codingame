@@ -5,13 +5,14 @@ def maximum_gold(m, n, k, grid):
         for j in range(0, n, k):
             gold_sum = 0
 
-            for x in range(i, i+k):
-                for y in range(j, j+k):
+            for x in range(i, i + k):
+                for y in range(j, j + k):
                     gold_sum += grid[x][y]
 
             max_gold = max(max_gold, gold_sum)
 
     return max_gold
+
 
 # Read input
 m, n, k = map(int, input().split())

@@ -12,7 +12,7 @@ def clash_royal_match(health, level):
         return "rawr", health
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Get input
     health = int(input())
     level = int(input())

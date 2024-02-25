@@ -8,6 +8,7 @@ START_NUMBER = 0  # index of the start room
 
 class Room:
     """Each room is a node of the tree"""
+
     def __init__(self, number: int, money: int, door1: str, door2: str):
         self.number = number
         self.money = money
@@ -29,6 +30,7 @@ class Room:
 
 class Building:
     """Tree representation of the building"""
+
     def __init__(self):
         self.rooms: List[Room] = []
 

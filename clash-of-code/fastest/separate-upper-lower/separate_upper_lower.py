@@ -10,6 +10,7 @@ def separate_upper_lower(text):
 
     return uppercase_chars, lowercase_chars
 
+
 # Read input
 text = input().strip()
 

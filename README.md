@@ -2,7 +2,7 @@
 
 ![CodinGame](images/MeanMax_Logo.jpg)
 
-The repository hosts solutions to diverse programming challenges from [CodinGame](https://www.codingame.com/), written in languages such as Python, C++, and Java. Each solution resides in a file named after the respective challenge. CodinGame offers developers a platform to enhance coding skills through engaging challenges, supporting multiple programming languages, and fostering friendly competition for solving challenges efficiently.
+The "Solutions to CodinGame Puzzles" project is a comprehensive repository housing solutions to an array of programming challenges sourced from CodinGame, a platform designed to enhance coding skills through interactive challenges. This repository features solutions implemented in Python, C++, Java, and other languages, each neatly organized within files named after the respective challenge. Covering a spectrum of difficulty levels from easy to hard, these solutions tackle diverse topics such as variables, input/output handling, conditions, loops, arrays, graphs, and more. With a focus on efficiency and clarity, the project aims to serve as a valuable resource for developers seeking to sharpen their problem-solving abilities and explore various programming paradigms while enjoying the friendly competition fostered by CodinGame's platform. Additionally, the project provides detailed documentation and adheres to standardized coding practices, ensuring accessibility and ease of use for contributors and users alike.
 
 ![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg) ![](https://img.shields.io/badge/code%20style-flake8-black)
 
@@ -55,3 +55,16 @@ The repository hosts solutions to diverse programming challenges from [CodinGame
 | Genome Sequencing 🧬 | [Python](./puzzles/python3/genome-sequencing) &starf; | Strings, Shortest Common Supersequence |
 | Blunder 2 🎱 | [Python](./puzzles/python3/blunder2) &starf; | Pathfinding |
 | Blunder 3 ⌛ | [Python](./puzzles/python3/blunder3) &starf; | Time Complexity |
+
+### Poetry
+
+```shell
+# Installing dependencies
+poetry install
+
+# Linting
+poetry run ruff check .
+
+# Formatting
+poetry run ruff format .
+```

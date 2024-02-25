@@ -6,7 +6,7 @@ p = int(input())  # p = x * y
 # x**2 - x*s + p = 0
 # a = 1, b = -s, c = p
 
-delta = s ** 2 - 4 * p 
+delta = s**2 - 4 * p
 
 x1 = (s + math.sqrt(delta)) / 2
 x2 = (s - math.sqrt(delta)) / 2

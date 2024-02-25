@@ -1,4 +1,3 @@
-import sys
 from collections import Counter
 
 routes = input()
@@ -7,11 +6,11 @@ position = (0, 0)  # (x, y)
 counter[position] += 1
 
 for route in routes:
-    if route == '^':
+    if route == "^":
         position = (position[0], position[1] - 1)
-    elif route == '>':
+    elif route == ">":
         position = (position[0] + 1, position[1])
-    elif route == 'v':
+    elif route == "v":
         position = (position[0], position[1] + 1)
     elif route == "<":
         position = (position[0] - 1, position[1])

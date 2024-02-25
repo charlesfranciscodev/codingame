@@ -86,11 +86,13 @@ class Game:
 
     def is_valid_position(self, x: int, y: int) -> bool:
         symbol = self.grid[y][x].symbol
-        return all([
-            x >= 0 and x < self.grid_width,
-            y >= 0 and y < self.grid_height,
-            symbol != STRONG_WALL_SYMBOL and (symbol != WEAK_WALL_SYMBOL or self.blunder.break_mode_state),
-        ])
+        return all(
+            [
+                x >= 0 and x < self.grid_width,
+                y >= 0 and y < self.grid_height,
+                symbol != STRONG_WALL_SYMBOL and (symbol != WEAK_WALL_SYMBOL or self.blunder.break_mode_state),
+            ]
+        )
 
     def update_bender_state(self):
         if self.current_symbol == SOUTH_SYMBOL:

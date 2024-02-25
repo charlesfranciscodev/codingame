@@ -1,6 +1,3 @@
-import sys
-import math
-
 def revive_spongebob_meme(input_string):
     converted_string = ""
     i = 0

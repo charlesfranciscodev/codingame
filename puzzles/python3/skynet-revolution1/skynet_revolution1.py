@@ -3,9 +3,7 @@ from typing import Deque, Dict, Optional, List, Set, Tuple
 
 
 def bfs(
-    graph: Dict[int, Set[int]],
-    gateways: Set[int],
-    agent_node_id: int
+    graph: Dict[int, Set[int]], gateways: Set[int], agent_node_id: int
 ) -> Tuple[Optional[Dict[int, int]], Optional[int]]:
     visited = set()
     queue: Deque[int] = deque()

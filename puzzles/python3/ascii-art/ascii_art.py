@@ -6,7 +6,7 @@ def solve():
         row = input()
         output = ""
         for character in text:
-            position = ord(character) - ord('A')
+            position = ord(character) - ord("A")
             if position < 0 or position > 25:
                 position = 26
             start = position * width

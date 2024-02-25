@@ -15,5 +15,5 @@ class TestCheatingCouples(unittest.TestCase):
         self.assertEqual(find_cheating_couples(n, relationships), 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

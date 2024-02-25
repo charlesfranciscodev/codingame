@@ -23,5 +23,5 @@ class TestCanReturnToFirstElement(unittest.TestCase):
         self.assertEqual(result, "returns")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

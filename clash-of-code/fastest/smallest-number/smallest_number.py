@@ -18,6 +18,7 @@ def get_smallest_number(N):
         # Increment M for the next iteration
         M += 1
 
+
 # Get input from the user
 N = int(input())
 

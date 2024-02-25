@@ -1,5 +1,5 @@
-PASSAGE = '0'
-WALL = '#'
+PASSAGE = "0"
+WALL = "#"
 
 
 class Game:
@@ -15,9 +15,9 @@ class Game:
         for y in range(self.height):
             for x in range(self.width):
                 if self.rows[y][x] == WALL:
-                    print(WALL, end='')
+                    print(WALL, end="")
                 else:
-                    print(self.adjacent_passable_cells(x, y), end='')
+                    print(self.adjacent_passable_cells(x, y), end="")
             print()
 
     def adjacent_passable_cells(self, x, y):

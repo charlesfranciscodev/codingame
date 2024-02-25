@@ -1,6 +1,6 @@
 def find_odd_squares(numbers):
     odd_numbers = [n for n in numbers if n % 2 != 0]
-    square_set = set(n ** 2 for n in odd_numbers)
+    square_set = set(n**2 for n in odd_numbers)
     sorted_squares = sorted(square_set, reverse=True)
     return sorted_squares
 

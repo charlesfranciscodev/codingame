@@ -15,5 +15,5 @@ class TestHarshadNumber(unittest.TestCase):
         self.assertFalse(is_harshad_number(99))  # 9 + 9 = 18, 99 is not divisible by 18
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

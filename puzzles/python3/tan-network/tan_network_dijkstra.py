@@ -3,12 +3,12 @@ from collections import defaultdict
 from typing import Dict, List, Set
 
 
-class Node():
+class Node:
     EARTH_RADIUS = 6371
 
     def __init__(self, node_id: str, full_name: str, latitude: str, longitude: str):
         self.node_id = node_id
-        self.full_name = full_name.replace('\"', '')
+        self.full_name = full_name.replace('"', "")
         self.latitude = math.radians(float(latitude))
         self.longitude = math.radians(float(longitude))
         self.edges = []
@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     n = int(input())
     for _ in range(n):
-        node_id, full_name, _, latitude, longitude, _, _, _, _ = input().split(',')
+        node_id, full_name, _, latitude, longitude, _, _, _, _ = input().split(",")
         node = Node(node_id, full_name, latitude, longitude)
         graph[node_id] = node
 
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     for _ in range(m):
         try:
             data = input()
-            node_id_from, node_id_to = data.split(' ')
+            node_id_from, node_id_to = data.split(" ")
             graph[node_id_from].edges.append(node_id_to)
         except EOFError:
             break

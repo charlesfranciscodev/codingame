@@ -4,8 +4,8 @@ from typing import List
 if __name__ == "__main__":
     nb_buildings = int(input())
     y_coordinates: List[int] = []
-    min_x = 2 ** 30
-    max_x = -2 ** 30
+    min_x = 2**30
+    max_x = -(2**30)
 
     for _ in range(nb_buildings):
         x, y = map(int, input().split())

@@ -35,5 +35,5 @@ class TestFindOddSquares(unittest.TestCase):
         self.assertEqual(find_odd_squares(numbers), expected_output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

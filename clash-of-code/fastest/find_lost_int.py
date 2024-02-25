@@ -12,11 +12,12 @@ def find_lost_integer(numbers):
 
     return None
 
+
 # Read input until 0 is encountered
 numbers = []
 while True:
     line = input().strip()
-    if line == '0':
+    if line == "0":
         break
     numbers.extend(map(int, line.split()))
 

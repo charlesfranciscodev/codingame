@@ -7,4 +7,4 @@ a.sort()
 a.reverse()
 for i in range(len(a)):
     a[i] = str(a[i])
-print(' '.join(a))
+print(" ".join(a))

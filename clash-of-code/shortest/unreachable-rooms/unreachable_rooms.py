@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def find_unreachable_rooms(n, keys):
     graph = {i: set(keys[i]) for i in range(n)}
     visited = set([0])
@@ -14,6 +15,7 @@ def find_unreachable_rooms(n, keys):
 
     unreachable_rooms = n - len(visited)
     return unreachable_rooms
+
 
 # Read input
 n = int(input())

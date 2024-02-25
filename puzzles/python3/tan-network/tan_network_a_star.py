@@ -42,9 +42,9 @@ def read_game_input() -> Tuple[str, str, List[str], List[str]]:
 def parse_game_input(start_id: str, end_id: str, input_lines_nodes: List[str], input_lines_edges: List[str]) -> Graph:
     nodes: Dict[str, Node] = {}
     for input_line in input_lines_nodes:
-        data: List[str] = input_line.split(',')
+        data: List[str] = input_line.split(",")
         identifier = data[0]
-        name = data[1].replace('\"', '')
+        name = data[1].replace('"', "")
         latitude = math.radians(float(data[3]))
         longitude = math.radians(float(data[4]))
         node = Node(name, latitude, longitude)
@@ -124,7 +124,7 @@ def generate_solution(graph: Graph, came_from: Optional[Dict[str, str]]) -> str:
         while path:
             node = graph.nodes[path.pop()]
             node_names.append(node.name)
-        return '\n'.join(node_names)
+        return "\n".join(node_names)
 
 
 if __name__ == "__main__":

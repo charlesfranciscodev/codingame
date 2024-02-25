@@ -1,6 +1,3 @@
-import sys
-import math
-
 # Auto-generated code below aims at helping you parse
 # the standard input according to the problem statement.
 
@@ -9,9 +6,9 @@ out = 0
 for i in input().split():
     n = int(i)
     if n % 2 == 0:
-        out += n 
+        out += n
     else:
-        out *= n 
+        out *= n
 
 
 # Write an answer using print

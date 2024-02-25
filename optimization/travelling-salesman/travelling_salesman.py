@@ -43,4 +43,4 @@ for _ in range(N):
 tsp_path = tsp_solver(nodes)
 
 # Print output
-print(' '.join(map(str, tsp_path)))
+print(" ".join(map(str, tsp_path)))

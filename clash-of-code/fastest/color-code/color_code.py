@@ -13,9 +13,11 @@ def name_color(code):
         return "white"
 
     # Check if one value is >= 10 and the other two are < 10 (high-value color)
-    if (red >= 10 and green < 10 and blue < 10) or \
-       (red < 10 and green >= 10 and blue < 10) or \
-       (red < 10 and green < 10 and blue >= 10):
+    if (
+        (red >= 10 and green < 10 and blue < 10)
+        or (red < 10 and green >= 10 and blue < 10)
+        or (red < 10 and green < 10 and blue >= 10)
+    ):
         if red >= 10:
             return "red"
         elif green >= 10:
@@ -24,9 +26,11 @@ def name_color(code):
             return "blue"
 
     # Check if two colors are >= 10 and the other is < 10 (secondary colors)
-    if (red >= 10 and green >= 10 and blue < 10) or \
-       (red >= 10 and green < 10 and blue >= 10) or \
-       (red < 10 and green >= 10 and blue >= 10):
+    if (
+        (red >= 10 and green >= 10 and blue < 10)
+        or (red >= 10 and green < 10 and blue >= 10)
+        or (red < 10 and green >= 10 and blue >= 10)
+    ):
         if red >= 10 and blue >= 10:
             return "magenta"
         elif red >= 10 and green >= 10:
