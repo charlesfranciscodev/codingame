@@ -68,3 +68,7 @@ poetry run ruff check .
 # Formatting
 poetry run ruff format .
 ```
+
+### General Tips
+
+To tackle CodinGame puzzles effectively, start by understanding the problem statement thoroughly. Break down complex tasks into smaller, manageable steps. Utilize the provided input/output specifications to design your solution. Leverage appropriate data structures like arrays, graphs, queues, or strings based on the problem requirements. Pay attention to conditions and loops for flow control. For puzzles involving grids or matrices, consider 2D array manipulation techniques. Implement algorithms such as BFS, DFS, binary search, or sorting algorithms as needed. Optimize your code for efficiency, especially in hard puzzles, by employing dynamic programming or greedy algorithms. Test your solutions against sample inputs and edge cases to ensure correctness. Finally, document your code clearly, adhering to standard coding practices. Collaborate with others and explore diverse programming languages to broaden your problem-solving skills.
