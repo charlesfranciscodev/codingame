@@ -56,7 +56,7 @@ The "Solutions to CodinGame Puzzles" project is a comprehensive repository housi
 | Blunder 2 🎱 | [Python](./puzzles/python3/blunder2) &starf; | Pathfinding |
 | Blunder 3 ⌛ | [Python](./puzzles/python3/blunder3) &starf; | Time Complexity |
 
-### Poetry
+## Poetry
 
 ```shell
 # Installing dependencies
@@ -69,6 +69,10 @@ poetry run ruff check .
 poetry run ruff format .
 ```
 
-### General Tips
+## General Tips
 
 To tackle CodinGame puzzles effectively, start by understanding the problem statement thoroughly. Break down complex tasks into smaller, manageable steps. Utilize the provided input/output specifications to design your solution. Leverage appropriate data structures like arrays, graphs, queues, or strings based on the problem requirements. Pay attention to conditions and loops for flow control. For puzzles involving grids or matrices, consider 2D array manipulation techniques. Implement algorithms such as BFS, DFS, binary search, or sorting algorithms as needed. Optimize your code for efficiency, especially in hard puzzles, by employing dynamic programming or greedy algorithms. Test your solutions against sample inputs and edge cases to ensure correctness. Finally, document your code clearly, adhering to standard coding practices. Collaborate with others and explore diverse programming languages to broaden your problem-solving skills.
+
+## Discovering CodinGame: An Exciting Learning Journey
+
+As you start your coding journey on CodinGame, you're stepping into a world of puzzles that'll test your skills in ways you never imagined. From tweaking simple variables to tackling complex graph problems and optimizing dynamic programming, you'll dive into the heart of programming concepts. Armed with Python, C++, or Java, you'll craft solutions to challenges like figuring out temperatures or guiding Thor through electrifying adventures. Whether you're creating ASCII art or navigating the twists of a labyrinth, each task will sharpen your problem-solving skills and broaden your coding knowledge. Every puzzle you conquer adds to a growing library of solutions, building a community of learners and innovators. As you tackle each challenge, you won't just find answers – you'll gain a deeper grasp of algorithms, data structures, and the craft of coding itself. So, dive in, let your creativity loose, and enjoy the endless journey of learning and discovery on CodinGame.

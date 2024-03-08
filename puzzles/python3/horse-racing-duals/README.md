@@ -41,3 +41,7 @@ for i in range(1, N):
 print(min_diff)  # Print the minimum difference as the output
 
 ```
+
+## Edge Cases
+
+When considering the algorithm for comparing horses' strengths, several scenarios need addressing. Firstly, account for an empty input list, ensuring the algorithm handles the absence of horses gracefully. Secondly, handle the case where only one horse is in the list with care. Thirdly, address scenarios with duplicate strength values, testing the algorithm's response to ties or identical strengths. Additionally, assess whether negative strength values are permitted and how they're managed in sorting and computation. Evaluate the algorithm's efficiency and scalability with significantly large input sizes and test its robustness with extreme values, checking for correct handling of overflow or underflow cases. Validate the sorting step by generating randomized input where strengths are initially unsorted. Furthermore, consider scenarios where all strengths are equal to ensure the algorithm doesn't falter in cases of uniformity. Lastly, test the algorithm's ability to identify the minimum difference despite alternating strength values between high and low, ensuring it handles varied patterns effectively.
