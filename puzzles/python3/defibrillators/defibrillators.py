@@ -1,29 +1,47 @@
 import math
-
 from typing import List
 
 
-def to_radians(angle_in_degrees: str) -> float:
-    return float(angle_in_degrees.replace(",", ".", 1)) * math.pi / 180
+def convert_coordinates(coord: str) -> float:
+    return math.radians(float(coord.replace(",", ".")))
 
 
-if __name__ == "__main__":
-    min_distance: float = math.inf
-    closest_defib_name: str = ""
-    longitude: float = to_radians(input())
-    latitude: float = to_radians(input())
-    nb_defib: int = int(input())
+def calculate_distance(user_longitude: float, user_latitude: float, defibrillator: List[str]) -> float:
+    defibrillator_longitude = convert_coordinates(defibrillator[4])
+    defibrillator_latitude = convert_coordinates(defibrillator[5])
+    x = (defibrillator_longitude - user_longitude) * math.cos((user_latitude + defibrillator_latitude) / 2)
+    y = defibrillator_latitude - user_latitude
+    return math.hypot(x, y) * 6371
 
-    for _ in range(nb_defib):
-        defib: List[str] = input().split(";")
-        defib_longitude: float = to_radians(defib[4])
-        defib_latitude: float = to_radians(defib[5])
-        x: float = (defib_longitude - longitude) * math.cos((latitude + defib_latitude) / 2)
-        y: float = defib_latitude - latitude
-        EARTH_RADIUS: int = 6371
-        distance: float = math.hypot(x, y) * EARTH_RADIUS
+
+def find_nearest_defibrillator(user_longitude: float, user_latitude: float, defibrillators: List[List[str]]) -> str:
+    user_longitude = convert_coordinates(user_longitude)
+    user_latitude = convert_coordinates(user_latitude)
+    min_distance = math.inf
+    nearest_defibrillator = ""
+    for defibrillator in defibrillators:
+        distance = calculate_distance(user_longitude, user_latitude, defibrillator)
         if distance < min_distance:
             min_distance = distance
-            closest_defib_name = defib[1]
+            nearest_defibrillator = defibrillator[1]
+    return nearest_defibrillator
 
-    print(closest_defib_name)
+
+# Read user's location
+user_longitude = input()
+user_latitude = input()
+
+# Read the number of defibrillators
+N = int(input())
+
+# Read defibrillators' information
+defibrillators = []
+for _ in range(N):
+    defibrillator = input().split(";")
+    defibrillators.append(defibrillator)
+
+# Find the nearest defibrillator
+nearest_defibrillator = find_nearest_defibrillator(user_longitude, user_latitude, defibrillators)
+
+# Output the result
+print(nearest_defibrillator)
