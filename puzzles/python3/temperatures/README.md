@@ -37,3 +37,7 @@ for temp in temperatures:
 print(closest_temp if n > 0 else 0)
 
 ```
+
+## Edge Cases
+
+These include scenarios such as an empty input list, all negative temperatures, all positive temperatures, temperatures equidistant from zero with opposite signs, a single temperature in the list, and a large range of temperatures. Testing with an empty list ensures the program outputs 0 as expected, while all negative and positive temperatures verify whether the program identifies the closest positive temperature to zero correctly. Similarly, testing temperatures equidistant from zero with opposite signs checks the program's output in such cases. Additionally, testing with a single temperature ensures the program handles single-item lists accurately, and providing a large range of temperatures evaluates the program's efficiency and performance.
