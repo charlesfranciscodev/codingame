@@ -59,8 +59,13 @@ The "Solutions to CodinGame Puzzles" project is a comprehensive repository housi
 ## Poetry
 
 ```shell
+# create a new virtual environment
+conda create --name codingame python=3.11
+conda activate codingame
+pip3 install poetry
+
 # Installing dependencies
-poetry install
+poetry install --no-root
 
 # Linting
 poetry run ruff check .
