@@ -46,7 +46,7 @@ The "Solutions to CodinGame Puzzles" project is a collection of answers to codin
 | :---: | :------: | :------: |
 | The Labyrinth 🌟 | [Python](./puzzles/python3/the-labyrinth) &starf; | 2D Arrays, Graphs, BFS |
 | DFS 2 🏙️ | [Python](./puzzles/python3/skynet-revolution2) &starf;, [Kotlin](./puzzles/kotlin/src/skynet-revolution2) | Graphs |
-| Vox Codei 1 🎭 | [Python](./puzzles/python3/vox-codei1) &starf;, [C++](./puzzles/cpp/vox-codei1.cpp) | Simulation |
+| Vox Codei 1 🎭 | [Python](./puzzles/python3/vox-codei1) &starf;, [C++](./puzzles/cpp/vox-codei1) | Simulation |
 | Super Computer 📅 | [Python](./puzzles/python3/super-computer), [Kotlin](./puzzles/kotlin/src/super-computer) | Sorting, Greedy Algorithms, Scheduling |
 | Roller Coaster 🎢 | [Python](./puzzles/python3/roller-coaster) &starf; | Queues, Dynamic Programming, Simulation |
 | Surface 🌊 | [Python](./puzzles/python3/surface) &starf;, [Kotlin](./puzzles/kotlin/src/surface) | 2D Arrays, Graphs, Flood Fill |
