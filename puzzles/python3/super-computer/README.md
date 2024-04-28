@@ -54,3 +54,23 @@ To solve this problem, you need to find the maximum number of non-overlapping ca
 5. Output the count of performed calculations as the maximum number of calculations that can be carried out without overlapping.
 
 This algorithm ensures that calculations are scheduled in a way that maximizes the usage of the supercomputer without overlapping reservation periods.
+
+## Example Code
+
+```python
+# Sort the calculations
+calculations.sort(key=lambda x: x[1])
+
+# Initialize variables
+max_calculations = 0
+selected_calculations = []
+
+# Greedy algorithm
+for calculation in calculations:
+    if not selected_calculations:
+        selected_calculations.append(calculation)
+        max_calculations += 1
+    elif calculation[0] > selected_calculations[-1][1]:
+        selected_calculations.append(calculation)
+        max_calculations += 1
+```
