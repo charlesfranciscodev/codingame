@@ -11,7 +11,7 @@ def calculate_combinations(valid_count):
         return valid_count * (valid_count - 1) * (valid_count - 2)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     input_str = input()
     valid_count = count_valid_codes(input_str)
     result = calculate_combinations(valid_count)

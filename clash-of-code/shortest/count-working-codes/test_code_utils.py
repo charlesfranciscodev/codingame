@@ -24,5 +24,5 @@ class TestCalculateCombinations(unittest.TestCase):
         self.assertEqual(calculate_combinations(3), 6)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

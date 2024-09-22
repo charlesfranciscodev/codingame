@@ -1,10 +1,12 @@
 # Solutions to CodinGame Puzzles
 
-![CodinGame](images/MeanMax_Logo.jpg)
+<p align="center">
+  <a href="https://www.codingame.com/"><img src="images/codingame-1.svg" width="200" height="200" /></a>
+</p>
 
 The "Solutions to CodinGame Puzzles" project is a collection of answers to coding problems from CodinGame. CodinGame is a website where people can practice coding by solving puzzles. In this project, people have written solutions to these puzzles using languages like Python, C++, and Java. Each solution is saved in a file named after the puzzle it solves. The puzzles range from easy to hard and cover different coding topics like variables, conditions, and arrays. The goal of the project is to help developers get better at problem-solving and learn different ways of coding. It also includes explanations to help people understand the solutions better.
 
-![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg) [![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Puzzles
 
@@ -60,7 +62,7 @@ The "Solutions to CodinGame Puzzles" project is a collection of answers to codin
 
 ```shell
 # create a new virtual environment
-conda create --name codingame python=3.11
+conda create --name codingame python=3.12
 conda activate codingame
 pip3 install poetry
 
@@ -72,10 +74,26 @@ poetry run ruff check .
 
 # Formatting
 poetry run ruff format .
+
+# Update Python version
+conda update python
+
+# Update ruff version
+poetry add ruff@latest --dev
 ```
 
 ## General Tips
 
 To effectively solve CodinGame puzzles, thoroughly understand the problem, break it into manageable steps, and use input/output specs for your solution. Employ appropriate data structures and algorithms like BFS, DFS, binary search, or sorting, optimizing for efficiency with techniques such as dynamic programming. Test against sample inputs, document your code well, collaborate, and explore different languages for skill development.
 
-As you start learning to code on CodinGame, you're entering a world of puzzles that will test your skills in new ways. From adjusting simple things to solving harder problems with graphs and dynamic programming, you'll explore important programming ideas. Using Python, C++, or Java, you'll solve challenges like working with temperatures or helping Thor on adventures. Whether you're making pictures with characters or finding your way through a maze, each task will make you better at solving problems and teach you more about coding. Each puzzle you solve adds to a big collection of solutions, making a community of learners and creators. As you take on each challenge, you won't just get answers – you'll understand algorithms, data structures, and coding better. So, jump in, be creative, and enjoy learning and discovering new things on CodinGame.
+## Learning Opportunities
+
+CodinGame is an ideal platform for aspiring programmers to practice and improve their coding skills in a variety of programming languages. It offers a wide range of challenges, puzzles, and games that cater to different skill levels, from beginner to advanced. The platform provides a fun and engaging environment for coders to learn from their peers and develop their coding skills. CodinGame helps programmers:
+
+- Develop problem-solving skills and learn new algorithms and techniques.
+- Practice writing clean, efficient, and well-documented code.
+- Learn new programming languages and compare different language implementations.
+- Develop debugging skills and learn how to use tools to identify and fix errors.
+- Learn about the importance of time complexity and optimization.
+- Learn how to approach large problems by breaking them down into smaller, manageable steps.
+- Learn how to collaborate with others and build a team-based learning experience.

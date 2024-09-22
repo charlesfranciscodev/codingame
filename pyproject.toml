@@ -1,15 +1,15 @@
 [tool.poetry]
 name = "codingame"
 version = "0.1.0"
-description = "The project offers a diverse repository of solutions to programming challenges from CodinGame, featuring implementations in Python, C++, Java, and other languages. Organized by challenge difficulty, topics span from basic concepts like variables and conditions to advanced topics such as graphs and dynamic programming. With a focus on efficiency and clarity, the project aims to enhance developers' problem-solving skills while fostering friendly competition. Detailed documentation and adherence to coding standards ensure accessibility for contributors and users, making it a valuable resource for developers seeking to hone their coding abilities through engaging challenges."
+description = "Solutions to CodinGame Puzzles"
 authors = ["Charles-A. Francisco"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.2.2"
+ruff = "^0.6.8"
 
 [build-system]
 requires = ["poetry-core"]
@@ -49,8 +49,8 @@ exclude = [
 line-length = 120
 indent-width = 4
 
-# Python version
-target-version = "py311"
+# Always generate Python 3.12 compatible code.
+target-version = "py312"
 
 [tool.ruff.lint]
 # Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)  codes by default.
