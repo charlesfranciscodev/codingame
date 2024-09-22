@@ -6,7 +6,7 @@ authors = ["Charles-A. Francisco"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.12"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.2.2"

@@ -1,6 +1,6 @@
 import unittest
 
-from product_and_sum import  product_and_sum_of_consecutive_integers
+from product_and_sum import product_and_sum_of_consecutive_integers
 
 
 class TestProductAndSum(unittest.TestCase):
@@ -17,5 +17,5 @@ class TestProductAndSum(unittest.TestCase):
             self.assertEqual(product_and_sum_of_consecutive_integers(15), (1307674368000, 120))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
