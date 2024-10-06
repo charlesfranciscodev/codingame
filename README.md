@@ -6,7 +6,7 @@
 
 The "Solutions to CodinGame Puzzles" project is a collection of answers to coding problems from CodinGame. CodinGame is a website where people can practice coding by solving puzzles. In this project, people have written solutions to these puzzles using languages like Python, C++, and Java. Each solution is saved in a file named after the puzzle it solves. The puzzles range from easy to hard and cover different coding topics like variables, conditions, and arrays. The goal of the project is to help developers get better at problem-solving and learn different ways of coding. It also includes explanations to help people understand the solutions better.
 
-![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg) [![](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![](https://img.shields.io/github/languages/count/charlesfranciscodev/codingame.svg) ![Python Version](https://img.shields.io/badge/python-3.12%2B-blue.svg) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 ## Puzzles
 
@@ -74,6 +74,12 @@ poetry run ruff check .
 
 # Formatting
 poetry run ruff format .
+
+# Update Python version
+conda update python
+
+# Update ruff version
+poetry add ruff@latest --dev
 ```
 
 ## General Tips
