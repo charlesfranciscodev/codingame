@@ -1,6 +1,8 @@
 # Solutions to CodinGame Puzzles
 
-![CodinGame](images/MeanMax_Logo.jpg)
+<p align="center">
+  <a href="https://www.codingame.com/"><img src="images/codingame-1.svg" width="200" height="200" /></a>
+</p>
 
 The "Solutions to CodinGame Puzzles" project is a collection of answers to coding problems from CodinGame. CodinGame is a website where people can practice coding by solving puzzles. In this project, people have written solutions to these puzzles using languages like Python, C++, and Java. Each solution is saved in a file named after the puzzle it solves. The puzzles range from easy to hard and cover different coding topics like variables, conditions, and arrays. The goal of the project is to help developers get better at problem-solving and learn different ways of coding. It also includes explanations to help people understand the solutions better.
 
