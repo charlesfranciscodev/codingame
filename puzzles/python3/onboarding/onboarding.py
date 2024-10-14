@@ -1,13 +1,14 @@
-if __name__ == "__main__":
-    # game loop
+if __name__ == '__main__':
     while True:
-        enemy1: str = input()  # name of enemy 1
-        distance1: int = int(input())  # distance to enemy 1
-        enemy2: str = input()  # name of enemy 2
-        distance2: int = int(input())  # distance to enemy 2
+        enemy_1 = input()  # name of enemy 1
+        dist_1 = int(input())  # distance to enemy 1
+        enemy_2 = input()  # name of enemy 2
+        dist_2 = int(input())  # distance to enemy 2
 
-        # Display enemy1 name when enemy1 is the closest, enemy2 otherwise
-        if distance1 < distance2:
-            print(enemy1)
+        # Compare the distances of the two enemies
+        if dist_1 < dist_2:
+            # If enemy 1 is closer, shoot enemy 1
+            print(enemy_1)
         else:
-            print(enemy2)
+            # If enemy 2 is closer or at the same distance, shoot enemy 2
+            print(enemy_2)

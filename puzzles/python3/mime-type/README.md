@@ -1,82 +1,81 @@
-# Mime Type
+# MIME Type
 
-This is a solution to the "Mime Type" problem on [Codingame](https://www.codingame.com/training/easy/mime-type).
+## Description
 
-## Problem Description
+The task involves creating a program to determine the MIME type of files based on their names. This involves associating file extensions with MIME types. The program reads an association table with N elements and a list of Q file names to be analyzed. For each file name, the program identifies the extension by finding the substring after the last dot character. If the extension is found in the association table (case insensitive), it prints the corresponding MIME type. If the MIME type cannot be determined or the file has no extension, it outputs UNKNOWN. The program takes the number of elements in the table, the number of file names, the extension-MIME associations, and the file names as input, and outputs the corresponding MIME types or UNKNOWN.
 
-You are given a list of file names and their corresponding MIME types. You need to read a list of file names and determine the corresponding MIME type for each file name. If the MIME type cannot be determined, the program should output `UNKNOWN`.
+## Solution Overview
 
-The MIME type is determined by the file extension. The table of file extensions and their corresponding MIME types is given.
+To solve this problem, we need to map file extensions to their respective MIME types, and then analyze the file names to determine the MIME type by extracting the extension from the file name. If the extension matches one in our table (case insensitive), we return the MIME type; otherwise, we return `UNKNOWN`.
 
-| Extension | MIME Type |
-|-----------|-----------|
-|html       |text/html  |
-|htm        |text/html  |
-|png        |image/png  |
-|jpeg       |image/jpeg |
-|jpg        |image/jpeg |
-|gif        |image/gif  |
-|bmp        |image/bmp  |
-|txt        |text/plain|
-|pdf        |application/pdf|
+### Explanation:
 
-The file name may have multiple periods (.) in it, but the extension is always the substring that follows the last period.
+- We use a dictionary `mime_table` to store the file extensions and their corresponding MIME types, converting extensions to lowercase to handle case insensitivity.
+- For each file name, the program finds the last occurrence of a `.` in the string, and extracts the file extension if valid.
+- The MIME type is printed if the extension is found in the dictionary, otherwise `UNKNOWN` is printed.
 
-## Solution
+### Edge Cases Handled:
 
-The solution reads the the number of MIME types, number of file names and the file names. It stores the MIME types in a map with the extension as the key. Then it reads a list of file names and determines the corresponding MIME type by looking up the extension in the map. If the extension is not found, it outputs `UNKNOWN`.
+- Files with no extension or a dot at the end.
+- Extensions in different cases (e.g., `.TXT`, `.txt`, `.tXt` all map to the same MIME type).
+- Files whose extensions aren't in the provided table result in `UNKNOWN`.
 
 ## Example Input/Output
 
-Input:
+**Input**
 
 ```
-4
-2
+3
+3
 html text/html
 png image/png
 gif image/gif
-txt text/plain
-file.html
-file.txt
+animated.gif
+portrait.png
+index.html
 ```
 
-Output:
+**Output**
 
 ```
+image/gif
+image/png
 text/html
-text/plain
 ```
 
-## Example Code
+## Code Example
 
 ```python
-# Read the number of elements in the association table
-n = int(input())
+# Number of elements which make up the association table.
+N = int(input())
 
-# Read the number of file names to be analyzed
-q = int(input())
+# Number of file names to be analyzed.
+Q = int(input())
 
-# Create a dictionary to store the association table
-mime_types = {}
+mime_table = {}
 
-# Read the association table
-for _ in range(n):
-    ext, mime = input().split()
-    mime_types[ext.lower()] = mime
+# Reading the MIME type associations.
+for _ in range(N):
+    ext, mime_type = input().split()
+    mime_table[ext.lower()] = mime_type  # Store extensions as lowercase for case-insensitivity.
 
-# Process each file name
-for _ in range(q):
-    file_name = input().lower()
-
-    # Find the extension of the file
-    if '.' in file_name:
-        extension = file_name.split('.')[-1]
-        if extension in mime_types:
-            print(mime_types[extension])
+# Processing each file name.
+for _ in range(Q):
+    fname = input()
+    
+    # Find the position of the last '.' in the file name.
+    last_dot_index = fname.rfind('.')
+    
+    # If there's a '.' and it isn't the last character, extract the extension.
+    if last_dot_index != -1 and last_dot_index < len(fname) - 1:
+        file_ext = fname[last_dot_index + 1:].lower()  # Get the file extension and convert to lowercase.
+        
+        # Check if the extension exists in the mime_table.
+        if file_ext in mime_table:
+            print(mime_table[file_ext])  # Output the MIME type.
         else:
-            print("UNKNOWN")
+            print('UNKNOWN')  # Output UNKNOWN if extension not found.
     else:
-        print("UNKNOWN")
+        print('UNKNOWN')  # Output UNKNOWN if no extension or '.' at the end.
 
 ```

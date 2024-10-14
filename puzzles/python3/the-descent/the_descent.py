@@ -1,17 +1,15 @@
-from typing import List
+while True:
+    highest_index = 0
+    highest_height = -1
 
+    # Read the heights of the mountains and determine the highest
+    for i in range(8):
+        mountain_height = int(input())
+        
+        # Check if this mountain is the highest so far
+        if mountain_height > highest_height:
+            highest_height = mountain_height
+            highest_index = i
 
-def solve(mountain_heights: List[int]) -> int:
-    index_to_fire = 0
-    max_mountain_height = -1
-    for index, mountain_height in enumerate(mountain_heights):
-        if mountain_height > max_mountain_height:
-            max_mountain_height = mountain_height
-            index_to_fire = index
-    return index_to_fire
-
-
-if __name__ == "__main__":
-    while True:
-        mountain_heights = [int(input()) for _ in range(8)]
-        print(solve(mountain_heights))
+    # Output the index of the highest mountain to shoot
+    print(highest_index)

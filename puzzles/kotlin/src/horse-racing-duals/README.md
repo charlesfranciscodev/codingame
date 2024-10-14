@@ -1,46 +1,70 @@
-# Horse Racing Duals
-
-This is a solution to the Horse Racing Duals puzzle on [CodinGame](https://www.codingame.com/ide/puzzle/horse-racing-duals).
+# Horse-racing Duals
 
 ## Problem Description
 
-Given `N` integers representing the strengths of `N` horses, your goal is to find the minimum absolute difference between the strengths of any two horses in a pair. You must output this minimum difference.
+The goal of this puzzle is to find the two horses with the closest strength among a given number of horses. The strength of each horse is given as an integer. The program should output the difference between the strengths of the two closest horses.
 
-## Solution
+### Inputs
 
-The approach to solve this problem is to sort the list of horse strengths in ascending order and then compute the absolute difference between adjacent horses. The smallest difference found is the minimum absolute difference between the strengths of any two horses.
+Line 1: An integer N, the number of horses
 
-## Code Explanation
+The following N lines: The strength Pi of each horse, an integer
 
-The code begins with reading the integer `N` from the input. This is followed by reading `N` integers representing the strengths of the `N` horses. These strengths are stored in a list.
+### Output
 
-The list of horse strengths is then sorted in ascending order using the `sorted()` function. A new list is created by computing the absolute difference between adjacent strengths in the sorted list. The minimum absolute difference found in this new list is the minimum absolute difference between the strengths of any two horses.
+The difference D between the two closest strengths. D is an integer greater than or equal to 0.
 
-Finally, the minimum absolute difference is printed to the console.
+### Constraints
+
+1 < N < 100000
+0 < Pi ≤ 10000000
+
+### Example
+
+#### Input
+```
+3
+5
+8
+9
+```
+
+#### Output
+```
+1
+```
+
+## Code Example
 
 ```kotlin
 import java.util.*
 
-fun main(args : Array<String>) {
-
+fun main(args: Array<String>) {
     val input = Scanner(System.`in`)
-    val n = input.nextInt()
-
+    val N = input.nextInt()
+    
+    // Read all the horse strengths into a list
     val strengths = mutableListOf<Int>()
-    for (i in 0 until n) {
+    for (i in 0 until N) {
         strengths.add(input.nextInt())
     }
 
+    // Sort the list of strengths
     strengths.sort()
-    val differences = mutableListOf<Int>()
-    for (i in 0 until n-1) {
-        differences.add(strengths[i+1] - strengths[i])
+
+    // Initialize a large minimum difference
+    var minDifference = Int.MAX_VALUE
+
+    // Compute the minimum difference between adjacent horses
+    for (i in 0 until N - 1) {
+        val diff = strengths[i + 1] - strengths[i]
+        if (diff < minDifference) {
+            minDifference = diff
+        }
     }
 
-    println(differences.min())
+    // Output the minimum difference
+    println(minDifference)
 }
+
 ```
-
-## Conclusion
-
-This solution shows that sorting a list and then computing differences between adjacent elements is an effective way to solve this problem. The code is concise and easy to understand.

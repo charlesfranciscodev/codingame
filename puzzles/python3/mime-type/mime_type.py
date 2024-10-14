@@ -1,27 +1,36 @@
-from typing import Dict
+def mime_type_puzzle():
+    # Number of elements which make up the association table.
+    N = int(input())
 
+    # Number of file names to be analyzed.
+    Q = int(input())
 
-def main():
-    table: Dict[str, str] = {}  # file extension => mime type
-    nb_elements: int = int(input())
-    nb_names: int = int(input())
+    mime_table = {}
 
-    for _ in range(nb_elements):
-        extension, mime_type = input().split()
-        table[extension.lower()] = mime_type
+    # Reading the MIME type associations.
+    for _ in range(N):
+        ext, mime_type = input().split()
+        mime_table[ext.lower()] = mime_type  # Store extensions as lowercase for case-insensitivity.
 
-    for _ in range(nb_names):
-        name: str = input().lower()
-        dot_index: int = name.rfind(".")
-        if dot_index == -1 or dot_index == len(name) - 1:
-            print("UNKNOWN")
-        else:
-            extension: str = name[dot_index + 1 :]
-            if extension in table:
-                print(table[extension])
+    # Processing each file name.
+    for _ in range(Q):
+        fname = input()
+        
+        # Find the position of the last '.' in the file name.
+        last_dot_index = fname.rfind('.')
+        
+        # If there's a '.' and it isn't the last character, extract the extension.
+        if last_dot_index != -1 and last_dot_index < len(fname) - 1:
+            file_ext = fname[last_dot_index + 1:].lower()  # Get the file extension and convert to lowercase.
+            
+            # Check if the extension exists in the mime_table.
+            if file_ext in mime_table:
+                print(mime_table[file_ext])  # Output the MIME type.
             else:
-                print("UNKNOWN")
+                print('UNKNOWN')  # Output UNKNOWN if extension not found.
+        else:
+            print('UNKNOWN')  # Output UNKNOWN if no extension or '.' at the end.
 
 
 if __name__ == "__main__":
-    main()
+    mime_type_puzzle()
