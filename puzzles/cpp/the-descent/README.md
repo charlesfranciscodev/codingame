@@ -1,4 +1,4 @@
-# The Descent Puzzle
+# The Descent
 
 ## Description
 
@@ -10,7 +10,7 @@ The following code snippet is a game loop that continuously reads the heights of
 
 ## Example Input/Output
 
-**Input for one game turn**
+**Input**
 
 ```
 9
@@ -23,7 +23,7 @@ The following code snippet is a game loop that continuously reads the heights of
 2
 ```
 
-**Output for one game turn**
+**Output**
 
 ```
 0
@@ -31,20 +31,30 @@ The following code snippet is a game loop that continuously reads the heights of
 
 ## Code Example
 
-```python
-while True:
-    highest_index = 0
-    highest_height = -1
+```cpp
+#include <iostream>
+using namespace std;
 
-    # Read the heights of the mountains and determine the highest
-    for i in range(8):
-        mountain_height = int(input())
-        
-        # Check if this mountain is the highest so far
-        if mountain_height > highest_height:
-            highest_height = mountain_height
-            highest_index = i
+int main() {
+    // Game loop
+    while (true) {
+        int highestIndex = 0;
+        int highestHeight = -1;
 
-    # Output the index of the highest mountain to shoot
-    print(highest_index)
+        // Read the heights of the mountains and determine the highest
+        for (int i = 0; i < 8; i++) {
+            int mountainHeight;
+            cin >> mountainHeight;
+
+            // Check if this mountain is the highest so far
+            if (mountainHeight > highestHeight) {
+                highestHeight = mountainHeight;
+                highestIndex = i;
+            }
+        }
+
+        // Output the index of the highest mountain to shoot
+        cout << highestIndex << endl;
+    }
+}
 ```
