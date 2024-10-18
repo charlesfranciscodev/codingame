@@ -24,29 +24,45 @@ E
 
 ## Code Example
 
-```python
-light_x, light_y, thor_x, thor_y = map(int, input().split())
+```bash
+# Auto-generated code below aims at helping you parse
+# the standard input according to the problem statement.
+# ---
+# Hint: You can use the debug stream to print thorX and thorY if Thor seems not to follow your orders.
 
-while True:
-    remaining_turns = int(input())
-    
-    direction = ""
+# lightX: the X position of the light of power
+# lightY: the Y position of the light of power
+# thorX: Thor's current X position
+# thorY: Thor's current Y position
+read -r lightX lightY thorX thorY
+
+# game loop
+while true; do
+    # remainingTurns: The remaining amount of turns Thor can move. Do not remove this line.
+    read -r remainingTurns
+
+    # Calculate the direction
+    direction=""
 
     # Determine the vertical direction (N or S) and update position
-    if thor_y > light_y:
-        direction += "N"
-        thor_y -= 1
-    elif thor_y < light_y:
-        direction += "S"
-        thor_y += 1
+    if [ "$thorY" -gt "$lightY" ]; then
+        direction+="N"
+        ((thorY--))
+    elif [ "$thorY" -lt "$lightY" ]; then
+        direction+="S"
+        ((thorY++))
+    fi
 
     # Determine the horizontal direction (E or W) and update position
-    if thor_x > light_x:
-        direction += "W"
-        thor_x -= 1
-    elif thor_x < light_x:
-        direction += "E"
-        thor_x += 1
+    if [ "$thorX" -gt "$lightX" ]; then
+        direction+="W"
+        ((thorX--))
+    elif [ "$thorX" -lt "$lightX" ]; then
+        direction+="E"
+        ((thorX++))
+    fi
 
-    print(direction)
+    # Output the direction
+    echo "$direction"
+done
 ```

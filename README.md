@@ -15,8 +15,8 @@ The "Solutions to CodinGame Puzzles" project is a collection of answers to codin
 | :---: | :------: | :------: |
 | Onboarding 🛹 | [Python](./puzzles/python3/onboarding), [JavaScript](./puzzles/js/onboarding), [C++](./puzzles/cpp/onboarding) | Variables, Input/Output, Conditions |
 | The Descent 🌄 | [Python](./puzzles/python3/the-descent) &starf;, [Kotlin](./puzzles/kotlin/src/the-descent), [TypeScript](./puzzles/ts/the-descent), [C++](./puzzles/cpp/the-descent) | Conditions, Loops |
-| Power of Thor 1 ⚡ | [Python](./puzzles/python3/power-of-thor1) &starf;, [Kotlin](./puzzles/kotlin/src/power-of-thor1), [TypeScript](./puzzles/ts/power-of-thor1), [C++](./puzzles/cpp/power-of-thor1.cpp), [Swift](./puzzles/swift/power-of-thor1) | Input/Output, Conditions |
-| Temperatures ❄️ | [Python](./puzzles/python3/temperatures) &starf;, [Kotlin](./puzzles/kotlin/src/temperatures), [TypeScript](./puzzles/ts/temperatures), [Ruby](./puzzles/ruby/temperatures) | Conditions, Loops, Arrays |
+| Power of Thor 1 ⚡ | [Python](./puzzles/python3/power-of-thor1) &starf;, [Kotlin](./puzzles/kotlin/src/power-of-thor1), [TypeScript](./puzzles/ts/power-of-thor1), [Bash](./puzzles/bash/power-of-thor1), [Swift](./puzzles/swift/power-of-thor1) | Input/Output, Conditions |
+| Temperatures ❄️ | [Python](./puzzles/python3/temperatures), [Kotlin](./puzzles/kotlin/src/temperatures), [TypeScript](./puzzles/ts/temperatures), [Ruby](./puzzles/ruby/temperatures) &starf; | Conditions, Loops, Arrays |
 | Mars Lander 1 🚀 | [Python](./puzzles/python3/mars-lander1), [Kotlin](./puzzles/kotlin/src/mars-lander1), [TypeScript](./puzzles/ts/mars-lander1) &starf;, [C++](./puzzles/cpp/mars-lander1.cpp) | Conditions, Loops |
 | ASCII Art 🎨 | [Python](./puzzles/python3/ascii-art), [Kotlin](./puzzles/kotlin/src/ascii-art), [TypeScript](./puzzles/ts/ascii-art), [Ruby](./puzzles/ruby/ascii-art) &starf; | Strings |
 | Unary 1️⃣ | [Python](./puzzles/python3/unary), [TypeScript](./puzzles/ts/unary) &starf;, [Haskell](./puzzles/haskell/unary), [C#](./puzzles/cs/unary) | Strings, Encoding |
