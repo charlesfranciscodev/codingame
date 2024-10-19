@@ -1,7 +1,7 @@
 # Solutions to CodinGame Puzzles
 
 <p align="center">
-  <a href="https://www.codingame.com/"><img src="images/codingame-1.svg" width="200" height="200" /></a>
+  <a href="https://www.codingame.com/"><img src="https://cdn.brandfetch.io/idIfiwZMnL/w/820/h/177/theme/dark/logo.png?k=bfHSJFAPEG" /></a>
 </p>
 
 The "Solutions to CodinGame Puzzles" project is a collection of answers to coding problems from CodinGame. CodinGame is a website where people can practice coding by solving puzzles. In this project, people have written solutions to these puzzles using languages like Python, C++, and Java. Each solution is saved in a file named after the puzzle it solves. The puzzles range from easy to hard and cover different coding topics like variables, conditions, and arrays. The goal of the project is to help developers get better at problem-solving and learn different ways of coding. It also includes explanations to help people understand the solutions better.
@@ -17,8 +17,8 @@ The "Solutions to CodinGame Puzzles" project is a collection of answers to codin
 | The Descent 🌄 | [Python](./puzzles/python3/the-descent) &starf;, [Kotlin](./puzzles/kotlin/src/the-descent), [TypeScript](./puzzles/ts/the-descent), [C++](./puzzles/cpp/the-descent) | Conditions, Loops |
 | Power of Thor 1 ⚡ | [Python](./puzzles/python3/power-of-thor1) &starf;, [Kotlin](./puzzles/kotlin/src/power-of-thor1), [TypeScript](./puzzles/ts/power-of-thor1), [Bash](./puzzles/bash/power-of-thor1), [Swift](./puzzles/swift/power-of-thor1) | Input/Output, Conditions |
 | Temperatures ❄️ | [Python](./puzzles/python3/temperatures), [Kotlin](./puzzles/kotlin/src/temperatures), [TypeScript](./puzzles/ts/temperatures), [Ruby](./puzzles/ruby/temperatures) &starf; | Conditions, Loops, Arrays |
-| Mars Lander 1 🚀 | [Python](./puzzles/python3/mars-lander1), [Kotlin](./puzzles/kotlin/src/mars-lander1), [TypeScript](./puzzles/ts/mars-lander1) &starf;, [C++](./puzzles/cpp/mars-lander1.cpp) | Conditions, Loops |
-| ASCII Art 🎨 | [Python](./puzzles/python3/ascii-art), [Kotlin](./puzzles/kotlin/src/ascii-art), [TypeScript](./puzzles/ts/ascii-art), [Ruby](./puzzles/ruby/ascii-art) &starf; | Strings |
+| Mars Lander 1 🚀 | [Python](./puzzles/python3/mars-lander1), [Kotlin](./puzzles/kotlin/src/mars-lander1), [TypeScript](./puzzles/ts/mars-lander1) &starf;, [C++](./puzzles/cpp/mars-lander1.cpp), [C#](./puzzles/cs/mars-lander1) | Conditions, Loops |
+| ASCII Art 🎨 | [Python](./puzzles/python3/ascii-art) &starf;, [Kotlin](./puzzles/kotlin/src/ascii-art), [TypeScript](./puzzles/ts/ascii-art), [Ruby](./puzzles/ruby/ascii-art) | Strings |
 | Unary 1️⃣ | [Python](./puzzles/python3/unary), [TypeScript](./puzzles/ts/unary) &starf;, [Haskell](./puzzles/haskell/unary), [C#](./puzzles/cs/unary) | Strings, Encoding |
 | MIME Type 🎵 | [Python](./puzzles/python3/mime-type) &starf;, [Kotlin](./puzzles/kotlin/src/mime-type), [TypeScript](./puzzles/ts/mime-type), [C#](./puzzles/cs/mime-type) | Strings, Hash Tables |
 | Defibrillators 💖 | [Python](./puzzles/python3/defibrillators) &starf;, [Kotlin](./puzzles/kotlin/src/defibrillators), [TypeScript](./puzzles/ts/defibrillators), [C#](./puzzles/cs/defibrillators) | Strings, Trigonometry |

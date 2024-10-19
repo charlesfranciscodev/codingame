@@ -2,15 +2,11 @@
 
 ## Description
 
-"ASCII Art" is a beginner-level coding challenge available on the CodinGame platform. In this challenge, the player is given a string of characters and a font size, and is asked to generate an ASCII art representation of the string using ASCII characters.
+The goal of this puzzle is to simulate an old airport terminal display by displaying a line of text in ASCII art. To solve this challenge, you'll learn how to manage strings and perform array arithmetics. You will practice splitting strings into separate parts, concatenating them into a new string, and using array indexes effectively. By leveraging data structures like arrays or hash tables, you can store and recreate strings to create the ASCII art representation of the input text.
 
-The ASCII art output should be a sequence of lines, each line representing a row of the output. Each row should contain the ASCII characters that correspond to the input string, with each character expanded to the specified font size. If a character in the input string is not a letter or cannot be represented in ASCII art, it should be replaced with a question mark.
+## Example Input/Output
 
-The challenge consists of writing a program that takes as input the string of characters, the font size, and the ASCII art characters to be used for each letter, and outputs the corresponding ASCII art representation.
-
-The challenge is designed to help players learn and practice programming skills such as string manipulation, input/output handling, and ASCII art rendering. It is a fun and engaging way to improve programming skills while solving a challenging and entertaining puzzle.
-
-### Example Input
+**Input**
 
 ```
 4
@@ -24,7 +20,7 @@ CodinGame
 
 ```
 
-### Example Output
+**Output**
 
 ```
  ##  #  ##  ### ###  ##  #  # # ### 
@@ -66,28 +62,61 @@ To solve this coding puzzle, you'll need to create a program that takes the widt
 7. **Testing**:
    - Test your program with different input cases, including different widths, heights, and text inputs, to ensure it works correctly.
 
-Here's a simplified Python code for the main part of the code:
+## Code Example
 
 ```python
-def ascii_art(L, H, T, ascii_dict):
-    result = [''] * H
+L = int(input())  # width of each character
+H = int(input())  # height of the ASCII art
+T = input()  # input text to be converted to ASCII art
+
+# Read the ASCII art for A-Z and '?'
+ascii_art = []
+for i in range(H):
+    row = input()
+    ascii_art.append(row)
+
+# Create a dictionary to store the ASCII art for each character
+ascii_dict = {}
+
+for i in range(26):  # for A-Z
+    ascii_dict[chr(i + ord('A'))] = [ascii_art[j][i*L:(i+1)*L] for j in range(H)]
+
+# '?' will represent any unknown character
+ascii_dict['?'] = [ascii_art[j][26*L:(27)*L] for j in range(H)]
+
+# Convert the input text T to uppercase and handle unknown characters
+result = ['' for _ in range(H)]
+for char in T:
+    if char.isalpha():
+        char = char.upper()
+    else:
+        char = '?'
     
-    for char in T:
-        if char.isalpha():
-            index = ord(char.upper()) - ord('A')
-        else:
-            index = 26  # '?' character
-            
-        start = index * L
-        end = start + L
-        for i in range(H):
-            result[i] += ascii_dict[i][start:end]
-    
-    return '\n'.join(result)
+    for i in range(H):
+        result[i] += ascii_dict.get(char, ascii_dict['?'])[i]
+
+# Print the ASCII art for the input text T
+for line in result:
+    print(line)
+
 ```
 
-This pseudocode outlines the key steps to solve the coding puzzle. You need to implement the details, including reading the ASCII art representations and handling edge cases.
+## Explanation of Code Steps
+
+1. **Input Parsing**:
+   - Read `L` (width of each letter), `H` (height of letters), and `T` (input text).
+   - For `H` lines, read the ASCII art representing all characters from A to Z and `?`.
+
+2. **Store ASCII Art**:
+   - Use a list to store the ASCII art of each character in a structured way.
+   - For each character in the string `T`, extract the corresponding ASCII art from this list.
+
+3. **Handle Non-alphabet Characters**:
+   - Any character outside of the range `[A-Z]` or `[a-z]` should be replaced by the `?` character's ASCII art.
+
+4. **Print the ASCII Art**:
+   - For each line in the height `H`, concatenate and print the corresponding parts of the ASCII art for each character in `T`.
 
 ## Edge Cases
 
-Test your program by experimenting with an empty ASCII art representation for one or more characters to confirm that it appropriately manages missing character representations. Additionally, try inputting a combination of uppercase and lowercase letters to verify that the program handles case conversion and character lookup accurately. Test different combinations of widths and heights to ensure the program can handle various dimensions without errors or output distortion. Provide a single character input string to assess the program's handling of single-character input and its corresponding ASCII art output. Furthermore, examine input strings containing leading, trailing, and multiple consecutive whitespace characters to ensure proper whitespace handling. Lastly, test input strings where characters overlap in the ASCII art output to confirm the program handles such cases without merging characters or distorting the output. By conducting these tests, you can guarantee that the program gracefully handles various scenarios and produces correct ASCII art output under diverse conditions.
+Test your program by experimenting with an empty ASCII art representation for one or more characters to confirm that it appropriately manages missing character representations. Additionally, try inputting a combination of uppercase and lowercase letters to verify that the program handles case conversion and character lookup accurately. Test different combinations of widths and heights to ensure the program can handle various dimensions without errors or output distortion. Provide a single character input string to assess the program's handling of single-character input and its corresponding ASCII art output. Furthermore, examine input strings containing leading, trailing, and multiple consecutive whitespace characters to ensure proper whitespace handling. In summary, thoroughly test your program with various inputs, including empty ASCII art, mixed case letters, different dimensions, single characters, and strings with whitespace, to ensure it handles all cases accurately.
