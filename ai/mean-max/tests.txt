@@ -1,0 +1,7 @@
+input1.txt:output1.txt
+input1.txt:output1.txt
+input1.txt:output2.txt
+input2.txt:output4.txt
+input3.txt:output5.txt
+input4.txt:output6.txt
+input5.txt:output7.txt
